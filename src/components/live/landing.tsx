@@ -9,6 +9,7 @@ const Landing = () => {
           digit: "text-white",
         }}
       />
+      Rose Hack 2026 OMG
     </div>
   );
 };
