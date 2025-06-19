@@ -16,16 +16,16 @@ type config = {
 };
 
 const data: config = {
-  name: "HACKATHON",
-  short_name: "Hackathon Site",
-  email: "contact.acmucr@gmail.com",
-  description: "DESCRIPTION",
+  name: "Rosehack 2026",
+  short_name: "Rosehack 2026 Site",
+  email: "rosehackucr@gmail.com",
+  description: "Women Centric Hackathon",
   length: 24,
-  date: new Date("2025-06-15T13:20:00"),
-  end: new Date("2026-01-25T13:20:00"),
+  date: new Date("2026-01-25T13:20:00"),
+  end: new Date("2026-01-26T13:20:00"),
   packet: "",
   devpost: "https://devpost.com/",
-  domain: "https://www.placeholder.com",
+  domain: "https://www.rosehack.com",
   instagram: "https://www.instagram.com",
   linkedin: "https://www.linkedin.com",
   discord: "https://www.discord.com",
