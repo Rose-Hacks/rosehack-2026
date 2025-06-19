@@ -7,8 +7,8 @@ const Confirmation = () => {
     <>
       <Confetti height={height} width={width} />
       <p>
-        Thank you for filling out the application form. Please watch out for an
-        email with an application status update.
+        Thank you for filling out the interest form. Please watch out for an
+        email when applications open.
       </p>
     </>
   );
