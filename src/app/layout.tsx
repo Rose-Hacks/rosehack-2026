@@ -1,6 +1,7 @@
 /* eslint-disable new-cap */
 import "./globals.css";
-import { Solway, Inclusive_Sans } from "next/font/google";
+import { Solway } from "next/font/google";
+import { Inclusive_Sans as InclusiveSans } from "next/font/google";
 
 const solway = Solway({
   subsets: ["latin"],
@@ -9,7 +10,7 @@ const solway = Solway({
   variable: "--font-rosehack-main",
 });
 
-const sans = Inclusive_Sans({
+const sans = InclusiveSans({
   subsets: ["latin"],
   display: "swap",
   weight: ["400"],

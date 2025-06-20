@@ -1,5 +1,6 @@
 "use client";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
+import Button from "@/components/ui/button";
 import { useSession } from "next-auth/react";
 import Link from "next/link";
 import Image from "next/image";
@@ -20,7 +21,7 @@ const Page = () => {
         <p className="font-poppins text-2xl text-white">Welcome {name}</p>
 
         <div className="mt-10 flex flex-col gap-2 md:flex-row">
-          <Button className="text-md bg-gradient-to-r from-hackathon-tags-green-bg to-hackathon-green-300 text-black">
+          {/* <Button className="text-md bg-gradient-to-r from-hackathon-tags-green-bg to-hackathon-green-300 text-black">
             <Link href="/judge/register">Register</Link>
           </Button>
 
@@ -30,7 +31,7 @@ const Page = () => {
 
           <Button className="text-md bg-gradient-to-r from-hackathon-tags-green-bg to-hackathon-green-300 text-black">
             <Link href="/judge/start">Get Started</Link>
-          </Button>
+          </Button> */}
         </div>
       </div>
 
