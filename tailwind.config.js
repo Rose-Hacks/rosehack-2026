@@ -13,7 +13,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        poppins: ["var(--font-poppins)"],
+        "rosehack-main": ["var(--font-rosehack-main)", "serif"],
+        "rosehack-alt": ["var(--font-rosehack-alt)", "sans-serif"],
       },
       colors: {
         hackathon: {
@@ -64,6 +65,9 @@ module.exports = {
             "pink-text": "#F583F1",
             white: "#fff",
           },
+        },
+        rosehack: {
+          yellow: "#FFD68C",
         },
         sidebar: {
           DEFAULT: "#22577A",
