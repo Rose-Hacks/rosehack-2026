@@ -60,7 +60,7 @@ const Landing = () => {
         alt="light"
         className="absolute -top-40 left-10 z-50 scale-[0.7]"
       />
-      <div className="absolute top-32 z-50 flex w-fit flex-col items-center justify-center gap-4 md:top-36 md:w-full">
+      <div className="absolute z-50 flex w-fit flex-col items-center justify-center gap-4 md:w-full">
         <Image src={Logo} alt="Rose Hack Logo" className="w-1/5 sm:w-1/12" />
         <Content />
       </div>
