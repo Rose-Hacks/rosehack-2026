@@ -10,16 +10,16 @@ const rawHTML = `
             <tr>
               <td style="text-align: right; padding: 0 20px 20px 0; box-sizing: border-box;">
                 <a href="https://www.linkedin.com/company/rosehack/" target="_blank" style="text-decoration: none; margin: 0 4px; display: inline-block;">
-                  <img src="https://www.rosehack.com/email/linkedin.png" alt="linkedin icon" width="20" height="20" style="display: inline-block; vertical-align: middle; border: 0;" />
+                  <img src="https://www.rosehack.com/email/linkedin.webp" alt="linkedin icon" width="20" height="20" style="display: inline-block; vertical-align: middle; border: 0;" />
                 </a>
                 <a href="https://www.instagram.com/rosehackucr/" target="_blank" style="text-decoration: none; margin: 0 4px; display: inline-block;">
-                  <img src="https://www.rosehack.com/email/instagram.png" alt="instagram icon" width="20" height="20" style="display: inline-block; vertical-align: middle; border: 0;" />
+                  <img src="https://www.rosehack.com/email/instagram.webp" alt="instagram icon" width="20" height="20" style="display: inline-block; vertical-align: middle; border: 0;" />
                 </a>
                 <a href="https://www.rosehack.com/" target="_blank" style="text-decoration: none; margin: 0 4px; display: inline-block;">
-                  <img src="https://www.rosehack.com/email/website.png" alt="website icon" width="20" height="20" style="display: inline-block; vertical-align: middle; border: 0;" />
+                  <img src="https://www.rosehack.com/email/website.webp" alt="website icon" width="20" height="20" style="display: inline-block; vertical-align: middle; border: 0;" />
                 </a>
                 <a href="https://x.com/rosehackucr" target="_blank" style="text-decoration: none; margin: 0 4px; display: inline-block;">
-                  <img src="https://www.rosehack.com/email/x.png" alt="x icon" width="14" height="14" style="display: inline-block; vertical-align: middle; border: 0;" />
+                  <img src="https://www.rosehack.com/email/x.webp" alt="x icon" width="14" height="14" style="display: inline-block; vertical-align: middle; border: 0;" />
                 </a>
               </td>
             </tr>
