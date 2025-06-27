@@ -1,5 +1,3 @@
-"use client";
-
 const rawHTML = `
 <table width="400" cellpadding="0" cellspacing="0" style="background-image: url('https://www.rosehack.com/email/alessandro.webp'); background-size: 100% 100%;">
   <tbody>
