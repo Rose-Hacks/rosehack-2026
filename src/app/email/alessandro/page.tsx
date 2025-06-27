@@ -1,12 +1,14 @@
+import React from "react";
+
 const rawHTML = `
-<table width="400" cellpadding="0" cellspacing="0" style="background-image: url('https://www.rosehack.com/email/alessandro.webp'); background-size: 100% 100%;">
+<table width="400" cellpadding="0" cellspacing="0" style="background-image: url('https://www.rosehack.com/email/alessandro.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
   <tbody>
     <tr>
       <td height="200" style="vertical-align: bottom;">
         <table width="100%" cellpadding="0" cellspacing="0">
           <tbody>
             <tr>
-              <td style="text-align: right; padding-right: 60px; padding-bottom: 40px;">
+              <td style="text-align: right; padding-right: 75px; padding-bottom: 40px;">
                 <a href="https://www.linkedin.com/company/rosehack/" target="_blank" style="text-decoration: none; margin-right: 8px;">
                   <img src="https://www.rosehack.com/email/linkedin.png" alt="linkedin icon" width="20" height="20" style="display: inline-block; vertical-align: middle;" />
                 </a>
@@ -30,7 +32,11 @@ const rawHTML = `
 `;
 
 const EmailPreview = () => {
-  return <div dangerouslySetInnerHTML={{ __html: rawHTML }} />;
+  return (
+    <div style={{ fontSize: 0, lineHeight: 0 }}>
+      <div dangerouslySetInnerHTML={{ __html: rawHTML }} />
+    </div>
+  );
 };
 
 export default EmailPreview;
