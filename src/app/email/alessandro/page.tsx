@@ -1,5 +1,3 @@
-import React from "react";
-
 const rawHTML = `
 <table width="400" cellpadding="0" cellspacing="0" style="background-image: url('https://www.rosehack.com/email/alessandro.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
   <tbody>
@@ -33,7 +31,7 @@ const rawHTML = `
 
 const EmailPreview = () => {
   return (
-    <div style={{ fontSize: 0, lineHeight: 0 }}>
+    <div>
       <div dangerouslySetInnerHTML={{ __html: rawHTML }} />
     </div>
   );
