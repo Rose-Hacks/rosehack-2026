@@ -28,7 +28,7 @@ const Event = ({ event }: props) => {
               new Date(event.start.dateTime) < new Date()
                 ? new Date(event.end.dateTime) > new Date()
                   ? "animate-bounce bg-white/30"
-                  : "opacity-70"
+                  : "opacity-webp0"
                 : "bg-white/20"
             } flex w-full py-0`}
           >

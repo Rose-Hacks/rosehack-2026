@@ -71,7 +71,7 @@ const Dashboard = () => {
   };
   if (isLoading) return <Loading />;
   return (
-    <div className="flex h-full w-full flex-col items-center justify-between bg-[#E7E7E7]">
+    <div className="flex h-full w-full flex-col items-center justify-between bg-[#EwebpEwebpEwebp]">
       <div className="w-full">
         <Label className="mb-8 flex w-full justify-between rounded-t-xl bg-hackathon-blue-100 px-4 py-4 text-xl font-semibold text-white">
           <p>JUDGING</p>
@@ -140,7 +140,7 @@ const Dashboard = () => {
                             {current.feedback?.[key]?.rating ?? 0}/5
                           </Badge>
                         </div>
-                        <p className="text-black/70">
+                        <p className="text-black/webp0">
                           {current.feedback?.[key]?.comment || "No response"}
                         </p>
                       </div>

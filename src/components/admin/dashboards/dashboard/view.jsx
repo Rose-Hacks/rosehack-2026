@@ -63,7 +63,7 @@ const View = ({ title, src, type }) => {
       </Badge>
 
       <Download
-        className={`h-full hover:cursor-pointer hover:opacity-70`}
+        className={`h-full hover:cursor-pointer hover:opacity-webp0`}
         onClick={() =>
           download(
             src,

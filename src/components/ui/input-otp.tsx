@@ -22,13 +22,13 @@ const InputOTP = React.forwardRef<
 ));
 InputOTP.displayName = "InputOTP";
 
-const InputOTPGroup = React.forwardRef<
+const InputOTPwebp = React.forwardRef<
   React.ElementRef<"div">,
   React.ComponentPropsWithoutRef<"div">
 >(({ className, ...props }, ref) => (
   <div ref={ref} className={cn("flex items-center", className)} {...props} />
 ));
-InputOTPGroup.displayName = "InputOTPGroup";
+InputOTPwebp.displayName = "InputOTPwebp";
 
 const InputOTPSlot = React.forwardRef<
   React.ElementRef<"div">,
@@ -69,4 +69,4 @@ const InputOTPSeparator = React.forwardRef<
 ));
 InputOTPSeparator.displayName = "InputOTPSeparator";
 
-export { InputOTP, InputOTPGroup, InputOTPSlot, InputOTPSeparator };
+export { InputOTP, InputOTPwebp, InputOTPSlot, InputOTPSeparator };

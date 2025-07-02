@@ -6,7 +6,7 @@ import Heatmap from "./heatmap";
 import { AGES, DIETS, GENDERS, SHIRTS } from "@/data/form/information";
 import { api } from "@/utils/api";
 import { STATUSES } from "@/data/statuses";
-import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
+import { Togglewebp, TogglewebpItem } from "@/components/ui/toggle-group";
 
 const Statistics = () => {
   const { data } = useQuery({
@@ -52,7 +52,7 @@ const Statistics = () => {
     <div className="font-poppins flex h-full flex-col py-4">
       <Label className="pr-5 text-2xl font-bold">Statistics</Label>
       <div className="flex h-full items-start">
-        <ToggleGroup
+        <Togglewebp
           type="single"
           value={value}
           onValueChange={(value) => {
@@ -60,11 +60,11 @@ const Statistics = () => {
           }}
         >
           {Object.keys(mappings).map((value, index) => (
-            <ToggleGroupItem value={value} key={index}>
+            <TogglewebpItem value={value} key={index}>
               {value}
-            </ToggleGroupItem>
+            </TogglewebpItem>
           ))}
-        </ToggleGroup>
+        </Togglewebp>
       </div>
 
       {heatmaps.map(({ key, values, labels }) => (

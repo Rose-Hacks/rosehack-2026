@@ -6,7 +6,7 @@ import Link from "next/link";
 import { SquareArrowOutUpRight } from "lucide-react";
 import data from "@/data/config";
 import Terms from "./terms";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { Radiowebp, RadiowebpItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -134,7 +134,7 @@ const Questions = ({
                 {field.text}
                 {field.required && <span className="text-red-500">*</span>}
               </p>
-              <RadioGroup
+              <Radiowebp
                 value={object[field.field]}
                 onValueChange={(value) => handleClick(value, field.field)}
               >
@@ -144,12 +144,12 @@ const Questions = ({
                       className="mb-2 flex items-center space-x-2"
                       key={index}
                     >
-                      <RadioGroupItem value={option} id={option} />
+                      <RadiowebpItem value={option} id={option} />
                       <Label htmlFor={option}>{option}</Label>
                     </div>
                   ))}
                 </div>
-              </RadioGroup>
+              </Radiowebp>
             </>
           )}
           {field.input === "textarea" && (

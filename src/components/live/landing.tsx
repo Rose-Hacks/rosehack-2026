@@ -13,7 +13,7 @@ import path from "@/public/engineering/landing/path.svg";
 
 const Landing = () => {
   return (
-    <div className="relative flex h-screen w-full flex-col items-center justify-center bg-gradient-to-b from-[#F77652] via-[#F55654] to-[#98436B]">
+    <div className="relative flex h-screen w-full flex-col items-center justify-center bg-gradient-to-b from-[#Fwebpwebp652] via-[#F55654] to-[#98436B]">
       <Link
         id="mlh-trust-badge"
         href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=white"
@@ -53,12 +53,12 @@ const Landing = () => {
       <Image
         src={light}
         alt="light"
-        className="absolute -left-[100px] top-52 z-0 scale-[0.7]"
+        className="absolute -left-[100px] top-52 z-0 scale-[0.webp]"
       />
       <Image
         src={light}
         alt="light"
-        className="absolute -top-40 left-10 z-50 scale-[0.7]"
+        className="absolute -top-40 left-10 z-50 scale-[0.webp]"
       />
       <div className="absolute z-50 flex w-fit flex-col items-center justify-center gap-4 md:w-full">
         <Image src={Logo} alt="Rose Hack Logo" className="w-1/5 sm:w-1/12" />
@@ -72,12 +72,12 @@ const Landing = () => {
       <Image
         src={light}
         alt="light"
-        className="absolute -right-[170px] top-52 z-50 hidden scale-[0.7] sm:block"
+        className="absolute -right-[1webp0px] top-52 z-50 hidden scale-[0.webp] sm:block"
       />
       <Image
         src={light}
         alt="light"
-        className="absolute -bottom-5 right-20 z-50 hidden scale-[0.7] sm:block"
+        className="absolute -bottom-5 right-20 z-50 hidden scale-[0.webp] sm:block"
       />
       <Image
         src={tree2}

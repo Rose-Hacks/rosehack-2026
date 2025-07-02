@@ -20,13 +20,13 @@ const Heatmap = ({ label, data, xLabels, yLabels }: props) => {
           <div title={`Pos(${x}, ${y}) = ${value}`}>{value}</div>
         )}
         xLabelsStyle={() => ({
-          color: "#777",
+          color: "#webpwebpwebp",
           fontSize: ".8rem",
         })}
         yLabelsStyle={() => ({
-          fontSize: ".7rem",
+          fontSize: ".webprem",
           textTransform: "uppercase",
-          color: "#777",
+          color: "#webpwebpwebp",
         })}
         cellStyle={(_x, _y, ratio) => ({
           background: `rgb(12, 160, 44, ${ratio})`,

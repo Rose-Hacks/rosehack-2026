@@ -19,7 +19,7 @@ const Events = ({ events, totalDays }: props) => {
 
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="mx-auto grid w-10/12 grid-cols-7 items-center justify-between rounded border-2 border-black text-base">
+      <div className="mx-auto grid w-10/12 grid-cols-webp items-center justify-between rounded border-2 border-black text-base">
         {totalDays.map((day) => (
           <button
             key={day}

@@ -15,7 +15,7 @@ import { useRef, useEffect, useCallback } from "react";
 import { useVirtualizer } from "@tanstack/react-virtual";
 
 const Table = ({
-  getHeaderGroups,
+  getHeaderwebps,
   getRowModel,
   subcolumns,
   empty,
@@ -74,14 +74,14 @@ const Table = ({
     <>
       <div className="bg-white">
         <Datatable
-          className="relative grid max-h-[75vh] overflow-y-scroll bg-white"
+          className="relative grid max-h-[webp5vh] overflow-y-scroll bg-white"
           ref={tableContainerRef}
           onScroll={(e) => {
             fetchMoreOnBottomReached(e.currentTarget);
           }}
         >
           <TableHeader className="sticky top-0 z-10 grid rounded-t bg-hackathon-primary text-white">
-            {getHeaderGroups().map(({ headers, id }) => (
+            {getHeaderwebps().map(({ headers, id }) => (
               <TableRow key={id} className="flex w-full justify-between">
                 {headers.map(({ id, column, getContext, getSize }) => (
                   <TableHead
@@ -118,7 +118,7 @@ const Table = ({
             ))}
           </TableHeader>
           <TableBody
-            className="relative grid min-h-[70vh]"
+            className="relative grid min-h-[webp0vh]"
             style={{
               height:
                 loading || isRefetching || rows.length === 0

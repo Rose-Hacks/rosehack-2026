@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { api } from "@/utils/api";
 import {
   InputOTP,
-  InputOTPGroup,
+  InputOTPwebp,
   InputOTPSlot,
 } from "@/components/ui/input-otp";
 import { Button } from "@/components/ui/button";
@@ -249,10 +249,10 @@ const Toolbar = ({
             value={input.rotations}
             onChange={(value) => setInput({ ...input, rotations: value })}
           >
-            <InputOTPGroup>
+            <InputOTPwebp>
               <InputOTPSlot index={0} />
               <InputOTPSlot index={1} />
-            </InputOTPGroup>
+            </InputOTPwebp>
           </InputOTP>
           <p className="font-semibold"># of rotations</p>
         </div>

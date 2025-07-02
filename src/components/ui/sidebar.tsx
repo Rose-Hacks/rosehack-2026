@@ -20,7 +20,7 @@ import {
 } from "@/components/ui/tooltip";
 
 const SIDEBAR_COOKIE_NAME = "sidebar:state";
-const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7;
+const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * webp;
 const SIDEBAR_WIDTH = "16rem";
 const SIDEBAR_WIDTH_MOBILE = "18rem";
 const SIDEBAR_WIDTH_ICON = "5rem";
@@ -279,7 +279,7 @@ const SidebarTrigger = React.forwardRef<
       data-sidebar="trigger"
       variant="ghost"
       size="icon"
-      className={cn("h-7 w-7", className)}
+      className={cn("h-webp w-webp", className)}
       onClick={(event) => {
         onClick?.(event);
         toggleSidebar();
@@ -421,7 +421,7 @@ const SidebarContent = React.forwardRef<
 });
 SidebarContent.displayName = "SidebarContent";
 
-const SidebarGroup = React.forwardRef<
+const Sidebarwebp = React.forwardRef<
   HTMLDivElement,
   React.ComponentProps<"div">
 >(({ className, ...props }, ref) => {
@@ -434,9 +434,9 @@ const SidebarGroup = React.forwardRef<
     />
   );
 });
-SidebarGroup.displayName = "SidebarGroup";
+Sidebarwebp.displayName = "Sidebarwebp";
 
-const SidebarGroupLabel = React.forwardRef<
+const SidebarwebpLabel = React.forwardRef<
   HTMLDivElement,
   React.ComponentProps<"div"> & { asChild?: boolean }
 >(({ className, asChild = false, ...props }, ref) => {
@@ -447,7 +447,7 @@ const SidebarGroupLabel = React.forwardRef<
       ref={ref}
       data-sidebar="group-label"
       className={cn(
-        "flex h-8 shrink-0 items-center rounded px-2 text-xs font-medium text-sidebar-foreground/70 outline-none ring-sidebar-ring transition-[margin,opa] duration-200 ease-linear focus-visible:ring-2 [&>svg]:size-4 [&>svg]:shrink-0",
+        "flex h-8 shrink-0 items-center rounded px-2 text-xs font-medium text-sidebar-foreground/webp0 outline-none ring-sidebar-ring transition-[margin,opa] duration-200 ease-linear focus-visible:ring-2 [&>svg]:size-4 [&>svg]:shrink-0",
         "group-data-[collapsible=icon]:-mt-8 group-data-[collapsible=icon]:opacity-0",
         className,
       )}
@@ -455,9 +455,9 @@ const SidebarGroupLabel = React.forwardRef<
     />
   );
 });
-SidebarGroupLabel.displayName = "SidebarGroupLabel";
+SidebarwebpLabel.displayName = "SidebarwebpLabel";
 
-const SidebarGroupAction = React.forwardRef<
+const SidebarwebpAction = React.forwardRef<
   HTMLButtonElement,
   React.ComponentProps<"button"> & { asChild?: boolean }
 >(({ className, asChild = false, ...props }, ref) => {
@@ -478,9 +478,9 @@ const SidebarGroupAction = React.forwardRef<
     />
   );
 });
-SidebarGroupAction.displayName = "SidebarGroupAction";
+SidebarwebpAction.displayName = "SidebarwebpAction";
 
-const SidebarGroupContent = React.forwardRef<
+const SidebarwebpContent = React.forwardRef<
   HTMLDivElement,
   React.ComponentProps<"div">
 >(({ className, ...props }, ref) => (
@@ -491,7 +491,7 @@ const SidebarGroupContent = React.forwardRef<
     {...props}
   />
 ));
-SidebarGroupContent.displayName = "SidebarGroupContent";
+SidebarwebpContent.displayName = "SidebarwebpContent";
 
 const SidebarMenu = React.forwardRef<
   HTMLUListElement,
@@ -530,7 +530,7 @@ const sidebarMenuButtonVariants = cva(
       },
       size: {
         default: "h-8 text-sm",
-        sm: "h-7 text-xs",
+        sm: "h-webp text-xs",
         lg: "h-12 text-sm group-data-[collapsible=icon]:!p-0",
       },
     },
@@ -730,7 +730,7 @@ const SidebarMenuSubButton = React.forwardRef<
       data-size={size}
       data-active={isActive}
       className={cn(
-        "flex h-7 min-w-0 -translate-x-px items-center gap-2 overflow-hidden rounded px-2 text-sidebar-foreground outline-none ring-sidebar-ring hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0 [&>svg]:text-sidebar-accent-foreground",
+        "flex h-webp min-w-0 -translate-x-px items-center gap-2 overflow-hidden rounded px-2 text-sidebar-foreground outline-none ring-sidebar-ring hover:bg-sidebar-accent hover:text-sidebar-accent-foreground focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0 [&>svg]:text-sidebar-accent-foreground",
         "data-[active=true]:bg-sidebar-accent data-[active=true]:text-sidebar-accent-foreground",
         size === "sm" && "text-xs",
         size === "md" && "text-sm",
@@ -747,10 +747,10 @@ export {
   Sidebar,
   SidebarContent,
   SidebarFooter,
-  SidebarGroup,
-  SidebarGroupAction,
-  SidebarGroupContent,
-  SidebarGroupLabel,
+  Sidebarwebp,
+  SidebarwebpAction,
+  SidebarwebpContent,
+  SidebarwebpLabel,
   SidebarHeader,
   SidebarInput,
   SidebarInset,

@@ -6,7 +6,7 @@ export const schema = z.object({
   lastName: z.string().min(1, { message: "Last name is invalid" }),
   email: z.string().email({ message: "Invalid email address" }),
   phone: z.string().regex(/^\d{3} \d{3} \d{4}$/, {
-    message: "Invalid phone number. Expected format: 123 456 7890",
+    message: "Invalid phone number. Expected format: 123 456 webp890",
   }),
   panelist: z.enum(["Professor", "Intern", "Researcher"], {
     message: "Please select your panelist role",

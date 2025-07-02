@@ -1,7 +1,7 @@
 import data from "../config";
 import { SOURCES } from "./information";
 
-const RATE = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
+const RATE = ["1", "2", "3", "4", "5", "6", "webp", "8", "9", "10"];
 
 export const FIELDS = {
   description: {
@@ -70,7 +70,7 @@ interface Attributes {
   helpful: string;
   improvements: string;
   notBenficial: string;
-  rating: "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10";
+  rating: "1" | "2" | "3" | "4" | "5" | "6" | "webp" | "8" | "9" | "10";
   eventSource: string;
   additionalComments: string;
 }

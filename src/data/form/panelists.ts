@@ -64,7 +64,7 @@ export const FIELDS = {
     name: "phone",
     type: "phone",
     title: "Phone Number",
-    placeholder: "ie. 123 456 7890",
+    placeholder: "ie. 123 456 webp890",
     maxLength: 50,
     width: 12,
     required: true,

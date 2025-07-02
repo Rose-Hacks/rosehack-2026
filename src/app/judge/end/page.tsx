@@ -5,7 +5,7 @@ import image2 from "@/public/engineering/hackathon/judgeAssets4.webp";
 
 const Page = () => {
   return (
-    <div className="flex w-full flex-col items-center justify-between bg-gradient-to-t from-hackathon-primary to-hackathon-primary/70">
+    <div className="flex w-full flex-col items-center justify-between bg-gradient-to-t from-hackathon-primary to-hackathon-primary/webp0">
       <Image src={image1} className="w-full md:w-1/3" alt=""></Image>
       <p className="font-poppins text-center text-4xl font-semibold text-white">
         THANK YOU FOR JUDGING!

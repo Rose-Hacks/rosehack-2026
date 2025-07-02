@@ -207,12 +207,12 @@ const Toolbar = ({
         <RotateCcw
           size={30}
           onClick={handleReload}
-          className="text-hackathon-gray-300 duration-150 hover:cursor-pointer hover:opacity-70"
+          className="text-hackathon-gray-300 duration-150 hover:cursor-pointer hover:opacity-webp0"
         />
         <Trash2
           onClick={confirmDelete}
           size={30}
-          className="mx-2 text-hackathon-gray-300 duration-150 hover:cursor-pointer hover:opacity-70"
+          className="mx-2 text-hackathon-gray-300 duration-150 hover:cursor-pointer hover:opacity-webp0"
         />
       </div>
 

@@ -1,31 +1,31 @@
 "use client";
 
 import * as React from "react";
-import * as RadioGroupPrimitive from "@radix-ui/react-radio-group";
+import * as RadiowebpPrimitive from "@radix-ui/react-radio-group";
 import { Circle } from "lucide-react";
 
 import { cn } from "@/utils/tailwind";
 
-const RadioGroup = React.forwardRef<
-  React.ElementRef<typeof RadioGroupPrimitive.Root>,
-  React.ComponentPropsWithoutRef<typeof RadioGroupPrimitive.Root>
+const Radiowebp = React.forwardRef<
+  React.ElementRef<typeof RadiowebpPrimitive.Root>,
+  React.ComponentPropsWithoutRef<typeof RadiowebpPrimitive.Root>
 >(({ className, ...props }, ref) => {
   return (
-    <RadioGroupPrimitive.Root
+    <RadiowebpPrimitive.Root
       className={cn("grid gap-2", className)}
       {...props}
       ref={ref}
     />
   );
 });
-RadioGroup.displayName = RadioGroupPrimitive.Root.displayName;
+Radiowebp.displayName = RadiowebpPrimitive.Root.displayName;
 
-const RadioGroupItem = React.forwardRef<
-  React.ElementRef<typeof RadioGroupPrimitive.Item>,
-  React.ComponentPropsWithoutRef<typeof RadioGroupPrimitive.Item>
+const RadiowebpItem = React.forwardRef<
+  React.ElementRef<typeof RadiowebpPrimitive.Item>,
+  React.ComponentPropsWithoutRef<typeof RadiowebpPrimitive.Item>
 >(({ className, ...props }, ref) => {
   return (
-    <RadioGroupPrimitive.Item
+    <RadiowebpPrimitive.Item
       ref={ref}
       className={cn(
         "border-1 aspect-square h-4 w-4 rounded-full border border-slate-900 text-slate-900 ring-offset-white focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-slate-800 dark:text-slate-50 dark:ring-offset-slate-950 dark:focus-visible:ring-slate-300",
@@ -33,12 +33,12 @@ const RadioGroupItem = React.forwardRef<
       )}
       {...props}
     >
-      <RadioGroupPrimitive.Indicator className="flex items-center justify-center">
+      <RadiowebpPrimitive.Indicator className="flex items-center justify-center">
         <Circle className="h-2.5 w-2.5 fill-current text-current" />
-      </RadioGroupPrimitive.Indicator>
-    </RadioGroupPrimitive.Item>
+      </RadiowebpPrimitive.Indicator>
+    </RadiowebpPrimitive.Item>
   );
 });
-RadioGroupItem.displayName = RadioGroupPrimitive.Item.displayName;
+RadiowebpItem.displayName = RadiowebpPrimitive.Item.displayName;
 
-export { RadioGroup, RadioGroupItem };
+export { Radiowebp, RadiowebpItem };

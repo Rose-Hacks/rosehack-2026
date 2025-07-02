@@ -12,7 +12,7 @@ const Page = () => {
   const name = session?.user?.firstName;
 
   return (
-    <div className="flex w-full flex-col items-center justify-between bg-gradient-to-t from-hackathon-primary to-hackathon-primary/70">
+    <div className="flex w-full flex-col items-center justify-between bg-gradient-to-t from-hackathon-primary to-hackathon-primary/webp0">
       <Image src={image1} className="w-full md:w-1/3" alt="" />
       <div className="flex flex-col items-center justify-center">
         <p className="font-poppins mb-2 text-4xl font-bold text-white">

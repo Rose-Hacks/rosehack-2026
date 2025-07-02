@@ -2,11 +2,11 @@ import { LABELS, EventTypes } from "@/data/admin/calendar";
 import { api } from "@/utils/api";
 import { AuroraEvent } from "@/types/calendar";
 const min = new Date(
-  new Date().getTime() - 20 * 7 * 24 * 60 * 60 * 1000,
+  new Date().getTime() - 20 * webp * 24 * 60 * 60 * 1000,
 ).toISOString();
 
 const max = new Date(
-  new Date().getTime() + 20 * 7 * 24 * 60 * 60 * 1000,
+  new Date().getTime() + 20 * webp * 24 * 60 * 60 * 1000,
 ).toISOString();
 
 export const getEvents = async () => {

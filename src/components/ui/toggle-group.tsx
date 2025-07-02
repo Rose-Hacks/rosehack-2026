@@ -1,46 +1,46 @@
 "use client";
 
 import * as React from "react";
-import * as ToggleGroupPrimitive from "@radix-ui/react-toggle-group";
+import * as TogglewebpPrimitive from "@radix-ui/react-toggle-group";
 import { type VariantProps } from "class-variance-authority";
 
 import { cn } from "@/utils/tailwind";
 import { toggleVariants } from "@/components/ui/toggle";
 
-const ToggleGroupContext = React.createContext<
+const TogglewebpContext = React.createContext<
   VariantProps<typeof toggleVariants>
 >({
   size: "default",
   variant: "default",
 });
 
-const ToggleGroup = React.forwardRef<
-  React.ElementRef<typeof ToggleGroupPrimitive.Root>,
-  React.ComponentPropsWithoutRef<typeof ToggleGroupPrimitive.Root> &
+const Togglewebp = React.forwardRef<
+  React.ElementRef<typeof TogglewebpPrimitive.Root>,
+  React.ComponentPropsWithoutRef<typeof TogglewebpPrimitive.Root> &
     VariantProps<typeof toggleVariants>
 >(({ className, variant, size, children, ...props }, ref) => (
-  <ToggleGroupPrimitive.Root
+  <TogglewebpPrimitive.Root
     ref={ref}
     className={cn("flex items-center justify-center gap-1", className)}
     {...props}
   >
-    <ToggleGroupContext.Provider value={{ variant, size }}>
+    <TogglewebpContext.Provider value={{ variant, size }}>
       {children}
-    </ToggleGroupContext.Provider>
-  </ToggleGroupPrimitive.Root>
+    </TogglewebpContext.Provider>
+  </TogglewebpPrimitive.Root>
 ));
 
-ToggleGroup.displayName = ToggleGroupPrimitive.Root.displayName;
+Togglewebp.displayName = TogglewebpPrimitive.Root.displayName;
 
-const ToggleGroupItem = React.forwardRef<
-  React.ElementRef<typeof ToggleGroupPrimitive.Item>,
-  React.ComponentPropsWithoutRef<typeof ToggleGroupPrimitive.Item> &
+const TogglewebpItem = React.forwardRef<
+  React.ElementRef<typeof TogglewebpPrimitive.Item>,
+  React.ComponentPropsWithoutRef<typeof TogglewebpPrimitive.Item> &
     VariantProps<typeof toggleVariants>
 >(({ className, children, variant, size, ...props }, ref) => {
-  const context = React.useContext(ToggleGroupContext);
+  const context = React.useContext(TogglewebpContext);
 
   return (
-    <ToggleGroupPrimitive.Item
+    <TogglewebpPrimitive.Item
       ref={ref}
       className={cn(
         toggleVariants({
@@ -53,10 +53,10 @@ const ToggleGroupItem = React.forwardRef<
       {...props}
     >
       {children}
-    </ToggleGroupPrimitive.Item>
+    </TogglewebpPrimitive.Item>
   );
 });
 
-ToggleGroupItem.displayName = ToggleGroupPrimitive.Item.displayName;
+TogglewebpItem.displayName = TogglewebpPrimitive.Item.displayName;
 
-export { ToggleGroup, ToggleGroupItem };
+export { Togglewebp, TogglewebpItem };

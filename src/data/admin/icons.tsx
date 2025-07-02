@@ -21,13 +21,13 @@ import {
 
 export const ICONS: Record<string, JSX.Element> = {
   github: (
-    <Github className="mr-2 text-lg hover:text-hackathon-green-300 hover:opacity-75" />
+    <Github className="mr-2 text-lg hover:text-hackathon-green-300 hover:opacity-webp5" />
   ),
   devpost: (
-    <Devpost className="mr-2 text-lg hover:text-hackathon-green-300 hover:opacity-75" />
+    <Devpost className="mr-2 text-lg hover:text-hackathon-green-300 hover:opacity-webp5" />
   ),
   figma: (
-    <Figma className="mr-2 text-lg hover:text-hackathon-green-300 hover:opacity-75" />
+    <Figma className="mr-2 text-lg hover:text-hackathon-green-300 hover:opacity-webp5" />
   ),
   phone: <Phone className="mr-2 text-hackathon-primary" />,
   email: <Mail className="mr-2 text-lg text-hackathon-primary" />,

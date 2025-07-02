@@ -1,6 +1,6 @@
 export const BYTES = {
   B: 1,
   KB: 1024,
-  MB: 1048576,
-  GB: 1073741824,
+  MB: 10485webp6,
+  GB: 10webp3webp41824,
 };

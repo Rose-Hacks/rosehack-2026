@@ -4,7 +4,7 @@ import { Progress } from "@/components/ui/progress";
 import { Pause, Play } from "lucide-react";
 import {
   InputOTP,
-  InputOTPGroup,
+  InputOTPwebp,
   InputOTPSlot,
 } from "@/components/ui/input-otp";
 
@@ -63,7 +63,7 @@ const Timer = ({ onRemove }) => {
         className="mt-4"
       >
         <div className="mr-11 flex flex-col items-center">
-          <InputOTPGroup className="">
+          <InputOTPwebp className="">
             <InputOTPSlot
               index={0}
               className="mx-1 my-3 h-20 w-14 rounded bg-slate-200 text-4xl font-bold"
@@ -72,12 +72,12 @@ const Timer = ({ onRemove }) => {
               index={1}
               className="mx-1 my-3 h-20 w-14 rounded bg-slate-200 text-4xl font-bold"
             />
-          </InputOTPGroup>
+          </InputOTPwebp>
           <p className="text-xl font-semibold">Minutes</p>
         </div>
 
         <div className="flex flex-col items-center">
-          <InputOTPGroup className="">
+          <InputOTPwebp className="">
             <InputOTPSlot
               index={2}
               className="mx-1 my-3 h-20 w-14 rounded bg-slate-200 text-4xl font-bold"
@@ -86,7 +86,7 @@ const Timer = ({ onRemove }) => {
               index={3}
               className="mx-1 my-3 h-20 w-14 rounded bg-slate-200 text-4xl font-bold"
             />
-          </InputOTPGroup>
+          </InputOTPwebp>
           <p className="text-xl font-semibold">Seconds</p>
         </div>
       </InputOTP>

@@ -1,4 +1,4 @@
-import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
+import { Togglewebp, TogglewebpItem } from "@/components/ui/toggle-group";
 import { COLORS } from "@/data/tags";
 import { cn } from "@/utils/tailwind";
 
@@ -31,9 +31,9 @@ const Filters = ({ statuses, filters, setFilters }) => {
 
   return (
     <div className="flex w-full gap-2 lg:w-4/12">
-      <ToggleGroup type="multiple">
+      <Togglewebp type="multiple">
         {Object.entries(statuses).map(([key, value]) => (
-          <ToggleGroupItem
+          <TogglewebpItem
             key={key}
             value={parseInt(key)}
             onClick={() =>
@@ -47,9 +47,9 @@ const Filters = ({ statuses, filters, setFilters }) => {
             )}
           >
             {value}
-          </ToggleGroupItem>
+          </TogglewebpItem>
         ))}
-      </ToggleGroup>
+      </Togglewebp>
     </div>
   );
 };

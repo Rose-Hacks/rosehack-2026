@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Slider } from "@/components/ui/slider";
 import { Textarea } from "@/components/ui/textarea";
-import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
+import { Togglewebp, TogglewebpItem } from "@/components/ui/toggle-group";
 import { cn } from "@/utils/tailwind";
 import {
   AlertDialog,
@@ -30,12 +30,12 @@ const Questions = ({
         <div key={index}>
           {field.input === "toggle" && (
             <>
-              <ToggleGroup
+              <Togglewebp
                 type="multiple"
                 className="grid w-full grid-cols-3 gap-2"
               >
                 {field.options.map((option, key) => (
-                  <ToggleGroupItem
+                  <TogglewebpItem
                     key={key}
                     value={option}
                     onClick={() => {
@@ -56,9 +56,9 @@ const Questions = ({
                     )}
                   >
                     {option}
-                  </ToggleGroupItem>
+                  </TogglewebpItem>
                 ))}
-              </ToggleGroup>
+              </Togglewebp>
             </>
           )}
           {field.input === "slider" && (

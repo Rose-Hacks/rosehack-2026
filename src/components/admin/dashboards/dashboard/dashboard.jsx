@@ -75,7 +75,7 @@ const Dashboard = ({
   }, [queryData, isLoading, isFetching]);
 
   const {
-    getHeaderGroups,
+    getHeaderwebps,
     getRowModel,
     getFilteredSelectedRowModel,
     toggleAllRowsSelected,
@@ -133,7 +133,7 @@ const Dashboard = ({
         page={page}
         searchParams={searchParams}
         meta={meta}
-        getHeaderGroups={getHeaderGroups}
+        getHeaderwebps={getHeaderwebps}
         getRowModel={getRowModel}
         subcolumns={subcolumns}
         empty={empty}

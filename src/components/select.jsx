@@ -6,7 +6,7 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-  DropdownMenuGroup,
+  DropdownMenuwebp,
   DropdownMenuPortal,
 } from "@/components/ui/dropdown-menu";
 import { useVirtualizer } from "@tanstack/react-virtual";
@@ -45,7 +45,7 @@ const VirtualizedContent = ({ items, setSelected, userFn, searchable }) => {
           />
         )}
       </div>
-      <DropdownMenuGroup className="relative w-full">
+      <DropdownMenuwebp className="relative w-full">
         <div style={{ height: `${getTotalSize()}px` }}>
           {getVirtualItems().map((virtualRow) => {
             const option = options[virtualRow.index];
@@ -68,7 +68,7 @@ const VirtualizedContent = ({ items, setSelected, userFn, searchable }) => {
             );
           })}
         </div>
-      </DropdownMenuGroup>
+      </DropdownMenuwebp>
     </DropdownMenuContent>
   );
 };
