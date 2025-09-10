@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { GENDERS, SHIRTS, AGES, DIETS } from "@/data/form/information";
+import { GENDERS, SHIRTS, DIETS } from "@/data/form/information";
 
 export const schema = z.object({
   firstName: z.string().min(1, { message: "First name is required" }),
@@ -10,9 +10,6 @@ export const schema = z.object({
   }),
   gender: z.enum(GENDERS as [string, ...string[]], {
     message: "Please select your gender",
-  }),
-  age: z.enum(AGES as [string, ...string[]], {
-    message: "Please select your age",
   }),
   shirt: z.enum(SHIRTS as [string, ...string[]], {
     message: "Please select your shirt size",
