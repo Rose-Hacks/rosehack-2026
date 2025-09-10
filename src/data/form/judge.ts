@@ -6,9 +6,7 @@ import {
   TextInput,
   UploadInput,
 } from "@/types/forms";
-// import { GENDERS, SHIRTS, AGES, DIETS } from "./information";
-import { GENDERS, AGES, DIETS } from "./information";
-
+import { GENDERS, SHIRTS, AGES, DIETS } from "./information";
 import data from "@/data/config";
 
 interface Attributes {
@@ -34,7 +32,7 @@ interface Fields {
   phone: TextInput;
   gender: RadioInput;
   age: SelectInput;
-  // shirt: RadioInput;
+  shirt: RadioInput;
   affiliation: RadioInput;
   title: TextInput;
   photo: UploadInput;
@@ -139,15 +137,15 @@ export const FIELDS: Fields = {
     editable: true,
     searchable: true,
   },
-  // shirt: {
-  //   input: "radio",
-  //   text: "Shirt Size",
-  //   options: SHIRTS,
-  //   field: "shirt",
-  //   width: 12,
-  //   required: true,
-  //   editable: true,
-  // },
+  shirt: {
+    input: "radio",
+    text: "Shirt Size",
+    options: SHIRTS,
+    field: "shirt",
+    width: 12,
+    required: true,
+    editable: true,
+  },
 
   affiliation: {
     input: "radio",
