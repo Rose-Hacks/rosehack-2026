@@ -15,10 +15,10 @@ interface Attributes {
   email: string;
   phone: string;
   gender: string;
-  age: string;
   shirt: string;
   affiliation: "Professor" | "Student" | "Industry";
   title: string;
+  company: string;
   photo: string;
   diet: string;
   requirements: string[];
@@ -31,10 +31,10 @@ interface Fields {
   email: TextInput;
   phone: TextInput;
   gender: RadioInput;
-  age: SelectInput;
   shirt: RadioInput;
   affiliation: RadioInput;
   title: TextInput;
+  company: TextInput;
   photo: UploadInput;
   diet: RadioInput;
   requirements: TermsAndConditions;
@@ -126,17 +126,6 @@ export const FIELDS: Fields = {
     required: true,
     editable: true,
   },
-  age: {
-    input: "select",
-    title: "Age",
-    options: AGES,
-    field: "age",
-    placeholder: "ie. 18",
-    width: 12,
-    required: true,
-    editable: true,
-    searchable: true,
-  },
   shirt: {
     input: "radio",
     text: "Shirt Size",
@@ -163,6 +152,17 @@ export const FIELDS: Fields = {
     type: "text",
     title: "Title",
     placeholder: "ie. Hackathon Director",
+    maxLength: 50,
+    width: 12,
+    required: true,
+    editable: true,
+  },
+  company: {
+    input: "input",
+    name: "company",
+    type: "text",
+    title: "Company",
+    placeholder: "ie. RoseHack",
     maxLength: 50,
     width: 12,
     required: true,
@@ -213,10 +213,10 @@ export const ATTRIBUTES: Attributes = {
   email: "",
   phone: "",
   gender: "",
-  age: "",
   shirt: "",
   affiliation: "Professor",
   title: "",
+  company: "",
   photo: "",
   diet: "",
   requirements: [],
