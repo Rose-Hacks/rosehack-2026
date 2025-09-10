@@ -164,7 +164,7 @@ export const FIELDS: Fields = {
     placeholder: "ie. RoseHack",
     maxLength: 50,
     width: 12,
-    required: true,
+    required: false,
     editable: true,
   },
   photo: {
