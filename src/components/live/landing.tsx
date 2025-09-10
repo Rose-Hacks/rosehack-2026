@@ -33,7 +33,7 @@ const Landing = () => {
       <Image
         src={bush}
         alt="bush"
-        className="absolute -bottom-20 left-0 z-50 sm:bottom-0"
+        className="absolute hidden md:block -bottom-20 left-0 z-50 sm:bottom-0"
       />
       <Image
         src={path}
@@ -43,12 +43,12 @@ const Landing = () => {
       <Image
         src={tree1}
         alt="tree"
-        className="absolute left-2 z-20 hidden h-screen w-1/4 scale-125 object-contain md:top-0 md:block lg:-top-0 xl:-top-20"
+        className="absolute md:left-2 left-0 z-20 xl:h-screen xl:w-1/4 xl:scale-125 xl:object-contain md:top-0 xl:-top-20"
       />
       <Image
         src={treeBackground1}
         alt="tree background"
-        className="absolute -top-10 left-2 z-10 hidden h-screen w-1/4 scale-125 object-contain md:block"
+        className="absolute xl:-top-10 -top-4 left-2 z-10 hidden xl:h-screen xl:w-1/4 scale-125 xl:object-contain md:block"
       />
 
       <Image
@@ -83,12 +83,12 @@ const Landing = () => {
       <Image
         src={tree2}
         alt="tree"
-        className="absolute -top-10 right-2 z-20 hidden h-screen w-1/4 scale-125 object-contain md:block xl:-top-20"
+        className="absolute right-2 z-20 hidden xl:h-screen xl:w-1/4 scale-125 xl:object-contain md:block xl:-top-20"
       />
       <Image
         src={treeBackground2}
         alt="tree"
-        className="absolute -right-0 -top-0 z-10 hidden h-screen w-1/5 scale-125 object-contain md:block"
+        className="absolute xl:-top-10 -top-4 right-2 z-10 hidden xl:h-screen xl:w-1/4 scale-125 xl:object-contain md:block"
       />
       <Image
         src={bush}
