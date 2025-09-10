@@ -54,21 +54,21 @@ export const COLUMNS: (ColumnDef<Judge, string> & Column)[] = [
       </div>
     ),
   },
-  {
-    accessorKey: "shirt",
-    header: "Shirt",
-    enableColumnFilter: true,
-    filterFn: "includesString",
-    searchable: true,
-    cell: ({ row }) => (
-      <div
-        onClick={row.getToggleSelectedHandler()}
-        className="hover:cursor-pointer"
-      >
-        {row.getValue("shirt")}
-      </div>
-    ),
-  },
+  // {
+  //   accessorKey: "shirt",
+  //   header: "Shirt",
+  //   enableColumnFilter: true,
+  //   filterFn: "includesString",
+  //   searchable: true,
+  //   cell: ({ row }) => (
+  //     <div
+  //       onClick={row.getToggleSelectedHandler()}
+  //       className="hover:cursor-pointer"
+  //     >
+  //       {row.getValue("shirt")}
+  //     </div>
+  //   ),
+  // },
 
   {
     accessorKey: "title",
