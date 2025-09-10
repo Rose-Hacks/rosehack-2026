@@ -12,7 +12,7 @@ const Status = ({ object, statuses, setState }) => {
       <p className="text-center">
         You have already filled out the form. If you wish to change any
         information, please fill out the form again. Note that your status will
-        change until approved by an admin.
+        not change until approved by an admin.
       </p>
       <p className="text-center">
         If you believe that your status is incorrect, please reach out to us
