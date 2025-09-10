@@ -9,9 +9,9 @@ const Content = () => {
       <div className="flex w-full flex-col items-center justify-center gap-4 rounded-3xl p-3">
         <div className="whitespace-nowrap rounded-3xl text-center font-rosehack-main text-lg text-white md:whitespace-normal md:text-6xl">
           ROSE HACK 2026
-          <div className="m-3 flex items-center justify-center whitespace-nowrap rounded-3xl px-7 text-center text-lg md:whitespace-normal md:text-3xl">
+          {/* <div className="m-3 flex items-center justify-center whitespace-nowrap rounded-3xl px-7 text-center text-lg md:whitespace-normal md:text-3xl">
             COMING SOON
-          </div>
+          </div> */}
           <Countdown
             classNames={{
               unit: "text-white",
@@ -40,6 +40,13 @@ const Content = () => {
             <Button className="border-rosehack-white/30 hover:border-rosehack-white/40 flex items-center justify-center rounded-xl border-4 bg-rosehack-yellow px-10 text-xl text-gray-800 duration-150 hover:cursor-pointer hover:bg-rosehack-yellow/80">
               <Link target="_blank" href="/sponsorship/Packet.pdf">
                 Sponsorship Packet
+              </Link>
+            </Button>
+          </div>
+          <div className="grid grid-cols-1 items-center justify-center gap-3 px-5 py-1 font-rosehack-alt duration-200 hover:scale-105">
+            <Button className="border-rosehack-white/30 hover:border-rosehack-white/40 flex items-center justify-center rounded-xl border-4 bg-rosehack-yellow px-10 text-xl text-gray-800 duration-150 hover:cursor-pointer hover:bg-rosehack-yellow/80">
+              <Link target="_blank" href="/judge/register">
+                Judge Application
               </Link>
             </Button>
           </div>
