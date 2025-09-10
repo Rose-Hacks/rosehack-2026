@@ -1,12 +1,11 @@
 import {
   Description,
   RadioInput,
-  SelectInput,
   TermsAndConditions,
   TextInput,
   UploadInput,
 } from "@/types/forms";
-import { GENDERS, SHIRTS, AGES, DIETS } from "./information";
+import { GENDERS, SHIRTS, DIETS } from "./information";
 import data from "@/data/config";
 
 interface Attributes {
