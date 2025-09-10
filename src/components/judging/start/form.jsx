@@ -11,7 +11,9 @@ const Form = ({ object, setObject, header, fields, onSubmit, round }) => {
           <p>ROUND {round}</p>
         </div>
         <div className="w-full rounded-b bg-white p-8">
-          <p className="mb-4 text-center text-xl font-semibold">{header}</p>
+          <p className="mb-4 w-full text-center text-xl font-semibold">
+            {header}
+          </p>
           <div className="grid grid-cols-1 gap-3">
             <Questions
               loading={loading}
