@@ -28,13 +28,26 @@ const orders = {
 };
 
 const getStatistic = async (role, status, statistic) => {
+  if (statistic === "age" && role === "judges") {
+    const frequency = {};
+    for (const option of orders[statistic]) {
+      frequency[option] = 0;
+    }
+    return frequency;
+  }
+
   const snapshot = await getDocs(
     query(collection(db, "users"), where(`roles.${role}`, "==", status)),
   );
 
   const results = [];
 
-  snapshot.forEach((doc) => results.push(doc.data()[statistic]));
+  snapshot.forEach((doc) => {
+    const value = doc.data()[statistic];
+    if (value !== undefined && value !== null && value !== "") {
+      results.push(value);
+    }
+  });
 
   const frequency = {};
 

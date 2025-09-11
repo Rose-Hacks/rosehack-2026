@@ -36,6 +36,15 @@ export const GET = async () => {
     labels.forEach((label: string) => {
       heatmaps[doc.id][label] = {};
 
+      if (doc.id === "age" && label === "judges") {
+        statuses.forEach((status: string) => {
+          heatmaps[doc.id][label][status] = new Array(
+            orders[doc.id].length,
+          ).fill(0);
+        });
+        return;
+      }
+
       statuses.forEach((status: string) => {
         heatmaps[doc.id][label][status] = [];
 

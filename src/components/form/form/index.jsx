@@ -41,7 +41,7 @@ const Form = ({
         <p className="m-0 w-full rounded-t bg-[#F55654] px-4 py-4 text-xl font-semibold">
           {header}
         </p>
-        <div className="rounded-b bg-white p-8">
+        <div className="w-full rounded-b bg-white p-8">
           <div className="grid grid-cols-1 gap-3">
             {state === 0 ? (
               <Status object={object} statuses={statuses} setState={setState} />
