@@ -41,7 +41,7 @@ export const cleanImage = (file: File): Promise<File> => {
           );
         },
         "image/jpeg",
-        0.85, // quality
+        0.85,
       );
     };
 
