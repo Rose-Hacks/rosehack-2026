@@ -47,6 +47,7 @@ export const ATTRIBUTES: Record<keys, string[]> = {
     "diet",
     "gender",
     "title",
+    "company",
     "affiliation",
     "shirt",
     "photo",

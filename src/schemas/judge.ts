@@ -18,6 +18,7 @@ export const schema = z.object({
     message: "Please select your affiliation",
   }),
   title: z.string().min(1, { message: "Title is required" }),
+  company: z.string().optional(),
   photo: z.string().optional(),
   diet: z.enum(DIETS as [string, ...string[]], {
     message: "Please select your dietary restrictions",
