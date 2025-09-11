@@ -44,7 +44,6 @@ export const ATTRIBUTES: Record<keys, string[]> = {
     "lastName",
     "email",
     "phone",
-    "age",
     "diet",
     "gender",
     "title",

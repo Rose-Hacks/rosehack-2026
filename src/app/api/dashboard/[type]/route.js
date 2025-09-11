@@ -83,10 +83,11 @@ export const POST = async (req, { params }) => {
       updateDoc(doc(db, "statistics", "gender"), {
         [`${params.type}.0.${element.gender}`]: increment(1),
       });
-
-      updateDoc(doc(db, "statistics", "age"), {
-        [`${params.type}.0.${element.age}`]: increment(1),
-      });
+      if (params.type !== "judges") {
+        updateDoc(doc(db, "statistics", "age"), {
+          [`${params.type}.0.${element.age}`]: increment(1),
+        });
+      }
 
       send({
         email: user.email,
@@ -248,10 +249,12 @@ export const PUT = async (req, { params }) => {
             [`${params.type}.0.${object.gender}`]: increment(-1),
           });
 
-          updateDoc(doc(db, "statistics", "age"), {
-            [`${params.type}.${status}.${object.age}`]: increment(1),
-            [`${params.type}.0.${object.age}`]: increment(-1),
-          });
+          if (params.type !== "judges") {
+            updateDoc(doc(db, "statistics", "age"), {
+              [`${params.type}.${status}.${object.age}`]: increment(1),
+              [`${params.type}.0.${object.age}`]: increment(-1),
+            });
+          }
         } catch (error) {
           console.error(error);
         }
@@ -280,7 +283,7 @@ export const DELETE = async (req, { params }) => {
   try {
     if (types.has(params.type)) {
       await Promise.all(
-        objects.map(async ({ uid, shirt, diet, gender, age }) => {
+        objects.map(async ({ uid, shirt, diet, gender, age = null }) => {
           const snapshot = await getDoc(doc(db, "users", uid));
           const status = snapshot.data().roles[params.type];
           await updateDoc(doc(db, "users", uid), {
@@ -301,9 +304,11 @@ export const DELETE = async (req, { params }) => {
             [`${params.type}.${status}.${gender}`]: increment(-1),
           });
 
-          updateDoc(doc(db, "statistics", "age"), {
-            [`${params.type}.${status}.${age}`]: increment(-1),
-          });
+          if (params.type !== "judges") {
+            updateDoc(doc(db, "statistics", "age"), {
+              [`${params.type}.${status}.${age}`]: increment(-1),
+            });
+          }
         }),
       );
     }
