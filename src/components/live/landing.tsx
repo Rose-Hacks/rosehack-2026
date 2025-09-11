@@ -43,7 +43,7 @@ const Landing = () => {
       <Image
         src={tree1}
         alt="tree"
-        className="absolute left-0 z-20 md:left-2 md:top-0 xl:-top-20 xl:h-screen xl:w-1/4 xl:scale-125 xl:object-contain"
+        className="xl:-top-15 absolute left-0 z-20 md:left-2 md:top-0 xl:h-screen xl:w-1/4 xl:scale-125 xl:object-contain"
       />
       <Image
         src={treeBackground1}
