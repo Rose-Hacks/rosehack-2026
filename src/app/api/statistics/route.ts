@@ -2,6 +2,8 @@ import { db } from "@/utils/firebase";
 import { collection, getDocs } from "firebase/firestore";
 import { AGES, DIETS, GENDERS, SHIRTS } from "@/data/form/information";
 
+export const dynamic = "force-dynamic";
+
 const labels: string[] = [
   "participants",
   "judges",
