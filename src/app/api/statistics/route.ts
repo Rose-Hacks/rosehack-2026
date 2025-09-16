@@ -43,8 +43,10 @@ export const GET = async () => {
         } else {
           heatmaps[doc.id][label][status] = [];
 
-          const results = data[label][status];
-          const values: number[] = orders[doc.id].map((key) => results[key]);
+          const results = data[label]?.[status] ?? {};
+          const values: number[] = orders[doc.id].map(
+            (key) => results[key] ?? 0,
+          );
 
           heatmaps[doc.id][label][status] = values;
         }
