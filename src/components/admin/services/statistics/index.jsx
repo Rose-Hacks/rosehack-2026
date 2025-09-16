@@ -73,9 +73,17 @@ const Statistics = () => {
           <Heatmap
             key={key}
             label={value}
-            data={values[mappings[value]]}
+            data={
+              key !== "age"
+                ? values[mappings[value]]
+                : values[mappings[value]].filter(
+                    (unused, i) => roles[i] !== "judges",
+                  )
+            }
             xLabels={labels}
-            yLabels={roles}
+            yLabels={roles.filter(
+              (role) => !(key === "age" && role === "judges"),
+            )}
           />
         </>
       ))}
