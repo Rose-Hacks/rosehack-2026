@@ -4,7 +4,12 @@ import Live from "@/components/live";
 
 const Page = () => {
   return (
-    <div className="w-full">
+    <div
+      className="w-full"
+      style={{
+        background: "linear-gradient(to right, #F77652, #F55654, #98436B)",
+      }}
+    >
       <Release release={RELEASES["/"]}>
         <Live />
       </Release>
