@@ -1,5 +1,60 @@
+import Image from "next/image";
+import FooterAsset from "@/public/engineering/landing/footer_asset.svg";
+import MinimalLogo from "@/public/engineering/minimal_logo.svg";
+import { FaLinkedin, FaInstagram, FaDiscord } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import Link from "next/link";
+
 const Footer = () => {
-  return <div className="flex items-center justify-center">Footer</div>;
+  return (
+    <div className="relative w-full">
+      <Image
+        src={FooterAsset}
+        className="w-full"
+        alt="pond, plants, and deer on the rosehack footer!"
+      />
+      <div className="absolute inset-x-0 bottom-[20vh] flex flex-col items-center gap-5 text-white">
+        <Image
+          src={MinimalLogo}
+          alt="minimal rosehack logo"
+          className="object-contain"
+        />
+        <div className="flex flex-row gap-2 text-6xl">
+          <Link
+            href="mailto:mailto:rosehackucr@gmail.com"
+            className="duration-200 hover:scale-105"
+            target="_blank"
+          >
+            <MdEmail />
+          </Link>
+          <Link
+            href="https://www.linkedin.com/company/rosehack/"
+            className="duration-200 hover:scale-105"
+            target="_blank"
+          >
+            <FaLinkedin />
+          </Link>
+          <Link
+            href="https://discord.com/"
+            className="duration-200 hover:scale-105"
+            target="_blank"
+          >
+            <FaDiscord />
+          </Link>
+          <Link
+            href="https://www.instagram.com/rosehackucr/"
+            className="duration-200 hover:scale-105"
+            target="_blank"
+          >
+            <FaInstagram />
+          </Link>
+        </div>
+        <p className="font-rosehack-main text-4xl">
+          {"Made with <3 by the 2026 RoseHack team"}
+        </p>
+      </div>
+    </div>
+  );
 };
 
 export default Footer;
