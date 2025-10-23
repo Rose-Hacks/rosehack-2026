@@ -21,7 +21,7 @@ const Live = () => {
       <Committees />
       <Judges />
       <FAQ /> 
-      <Footer /> */}
+      <Footer />*/}
     </>
   );
 };

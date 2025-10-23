@@ -1,7 +1,7 @@
 import Image from "next/image";
 import FooterAsset from "@/public/engineering/landing/footer_asset.svg";
 import MinimalLogo from "@/public/engineering/minimal_logo.svg";
-import { FaLinkedin, FaInstagram, FaDiscord } from "react-icons/fa";
+import { FaLinkedin, FaInstagram } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import Link from "next/link";
 
@@ -35,13 +35,6 @@ const Footer = () => {
             <FaLinkedin />
           </Link>
           <Link
-            href="https://discord.com/"
-            className="duration-200 hover:scale-105"
-            target="_blank"
-          >
-            <FaDiscord />
-          </Link>
-          <Link
             href="https://www.instagram.com/rosehackucr/"
             className="duration-200 hover:scale-105"
             target="_blank"
@@ -49,7 +42,7 @@ const Footer = () => {
             <FaInstagram />
           </Link>
         </div>
-        <p className="w-11/12 text-center font-rosehack-main text-base md:text-4xl">
+        <p className="w-11/12 text-center font-rosehack-main text-base md:text-xl">
           {"Made with <3 by the 2026 RoseHack team"}
         </p>
       </div>
