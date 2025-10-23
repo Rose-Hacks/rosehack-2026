@@ -13,13 +13,13 @@ const Footer = () => {
         className="w-full"
         alt="pond, plants, and deer on the rosehack footer!"
       />
-      <div className="absolute inset-x-0 bottom-[20vh] flex flex-col items-center gap-5 text-white">
+      <div className="absolute inset-x-0 bottom-10 flex flex-col items-center gap-2 text-white md:bottom-[20vh] md:gap-5">
         <Image
           src={MinimalLogo}
           alt="minimal rosehack logo"
-          className="object-contain"
+          className="size-10 object-contain md:size-auto"
         />
-        <div className="flex flex-row gap-2 text-6xl">
+        <div className="flex flex-row gap-2 text-xl md:text-6xl">
           <Link
             href="mailto:mailto:rosehackucr@gmail.com"
             className="duration-200 hover:scale-105"
@@ -49,7 +49,7 @@ const Footer = () => {
             <FaInstagram />
           </Link>
         </div>
-        <p className="font-rosehack-main text-4xl">
+        <p className="w-11/12 text-center font-rosehack-main text-base md:text-4xl">
           {"Made with <3 by the 2026 RoseHack team"}
         </p>
       </div>
