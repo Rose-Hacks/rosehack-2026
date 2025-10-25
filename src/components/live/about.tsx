@@ -29,15 +29,22 @@ const About = () => {
   );
   return (
     <div
-      className="bg-linear-to-b flex h-[50vh] items-center justify-center from-[#243B3D] to-[#F46055]"
+      className="bg-linear-to-b flex items-center justify-center from-[#243B3D] to-[#F46055] py-8"
       style={{
         background:
           "linear-gradient(to bottom, #243B3D 0%, #416D70 31%, #AA7F7B 71%, #F46055 100%)",
       }}
     >
       <div className="flex flex-col items-center justify-center md:flex-row">
-        <div className="flex w-1/2 flex-col gap-4 font-rosehack-main text-xl text-white md:w-2/3">
-          <Title>About Us</Title>
+        <div className="flex w-3/4 flex-col gap-4 font-rosehack-main text-lg text-white md:w-2/3 md:text-xl">
+          <div className="flex items-center justify-evenly md:items-start md:justify-start">
+            <Title>About Us</Title>
+            <Image
+              src={Bottle}
+              alt="Bottle"
+              className="w-24 flex-shrink-0 rotate-[0.4rad] md:hidden"
+            />
+          </div>
           <p className="pt-4">
             Rose Hack is UC Riverside's 24-hour hackathon, one of the few
             women-centric hackathons in California! Founded by the female
@@ -51,7 +58,7 @@ const About = () => {
             in Science and Technology.
           </p>
         </div>
-        <div className="relative flex w-3/4 items-center justify-center md:w-1/3">
+        <div className="relative hidden w-3/4 items-center justify-center md:flex md:w-1/4">
           <motion.div
             className="pt-24"
             style={{ y: smallFairyY, x: smallFairyX }}
