@@ -3,7 +3,11 @@ type props = {
 };
 
 const Title = ({ children }: props) => {
-  return <div className="text-xl font-bold">{children}</div>;
+  return (
+    <div className="font-rosehack-main text-5xl font-bold text-white">
+      {children}
+    </div>
+  );
 };
 
 export default Title;
