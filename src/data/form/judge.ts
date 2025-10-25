@@ -170,7 +170,7 @@ export const FIELDS: Fields = {
   photo: {
     input: "upload",
     field: "photo",
-    text: "Upload Photo",
+    text: "Upload Photo (May be used on our website)",
     width: 12,
     types: ["png", "jpg", "jpeg"],
     maxSize: [1, "MB"],
