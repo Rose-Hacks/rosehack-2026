@@ -8,7 +8,6 @@ import tree2 from "@/public/engineering/landing/tree2.svg";
 import treeBackground1 from "@/public/engineering/landing/tree_background1.svg";
 import treeBackground2 from "@/public/engineering/landing/tree_background2.svg";
 import light from "@/public/engineering/landing/light.svg";
-import bush from "@/public/engineering/landing/bush.svg";
 import path from "@/public/engineering/landing/path.svg";
 
 const Landing = () => {
@@ -30,11 +29,6 @@ const Landing = () => {
         />
       </Link>
 
-      <Image
-        src={bush}
-        alt="bush"
-        className="absolute -bottom-20 left-0 z-50 hidden sm:bottom-0 md:block"
-      />
       <Image
         src={path}
         alt="path"
@@ -89,11 +83,6 @@ const Landing = () => {
         src={treeBackground2}
         alt="tree"
         className="absolute -top-4 right-2 z-10 hidden scale-125 md:block xl:-top-10 xl:h-screen xl:w-1/4 xl:object-contain"
-      />
-      <Image
-        src={bush}
-        alt="bush"
-        className="absolute -right-10 bottom-0 z-50 hidden scale-x-[-1] sm:block"
       />
     </div>
   );

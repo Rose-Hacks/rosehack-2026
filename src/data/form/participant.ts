@@ -60,16 +60,15 @@ export const FIELDS: Fields = {
     texts: [
       `Welcome to ${
         data.name
-      }. Thank you for considering to become a participant, we appreciate your enthusiasm to join ${
-        data.name
-      }. ${data.name} is a ${data.description} hackathon spanning ${
-        data.length
-      } hours on ${data.date.toLocaleString("default", {
-        month: "long",
-        day: "numeric",
-        year: "numeric",
-      })}.`,
-      "Participants are not required to stay the full duration of the event, but are encouraged to checkout the various events, workshops, and opportunities that are available.",
+      }! ${data.name} is a ${data.description} The event will take place on ${data.date.toLocaleString(
+        "default",
+        {
+          month: "long",
+          day: "numeric",
+          year: "numeric",
+        },
+      )}.`,
+      "Participants are not required to stay the full duration of the event, but are encouraged to checkout the various events, workshops, and opportunities that are available. We will not be providing travel reimbursement at this time.",
     ],
   },
   firstName: {
