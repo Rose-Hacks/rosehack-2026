@@ -46,13 +46,13 @@ const About = () => {
             />
           </div>
           <p className="pt-4">
-            {`Rose Hack is UC Riverside's 24-hour hackathon, one of the few
+            {`Rosehack is UC Riverside's 24-hour hackathon, one of the few
             women-centric hackathons in California! Founded by the female
             leaders of the Association for Computing Machinery (ACM-W) and the
             Society of Women Engineers (SWE).`}
           </p>
           <p>
-            {`Rose Hack's mission is to encourage individuals from
+            {`Rosehack's mission is to encourage individuals from
             underrepresented groups in STEM to gain experience, create strong
             networks, and build amazing projects through their shared passions
             in Science and Technology.`}
