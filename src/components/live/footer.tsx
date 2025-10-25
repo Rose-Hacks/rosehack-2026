@@ -7,7 +7,12 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="relative w-full">
+    <div
+      className="relative w-full"
+      style={{
+        background: "linear-gradient(to bottom, #C6517F 0%, #98436B 100%)",
+      }}
+    >
       <Image
         src={FooterAsset}
         className="w-full"
