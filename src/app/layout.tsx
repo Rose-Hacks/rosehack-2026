@@ -17,6 +17,11 @@ const sans = InclusiveSans({
   variable: "--font-rosehack-alt",
 });
 
+export const metadata = {
+  title: "Rosehack 2026",
+  description: "Rosehack is a 24 Hour Women Centric Hackathon hosted by UCR.",
+};
+
 type Props = {
   children: React.ReactNode;
 };
