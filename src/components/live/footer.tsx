@@ -18,7 +18,7 @@ const Footer = () => {
         className="w-full"
         alt="pond, plants, and deer on the rosehack footer!"
       />
-      <div className="absolute inset-x-0 bottom-10 flex flex-col items-center gap-2 text-white md:gap-5">
+      <div className="absolute inset-x-0 bottom-10 z-50 flex flex-col items-center gap-2 text-white md:gap-5">
         <Image
           src={MinimalLogo}
           alt="minimal rosehack logo"

@@ -20,7 +20,7 @@ const Live = () => {
           minSize={0.6}
           maxSize={1.7}
           particleDensity={45}
-          className="absolute inset-0 z-50 h-full w-full"
+          className="z-45 absolute inset-0 h-full w-full"
           particleColor="#FFFFFF"
           speed={0.7}
         />
@@ -47,7 +47,7 @@ const Live = () => {
           minSize={0.6}
           maxSize={1.7}
           particleDensity={25}
-          className="absolute inset-0 h-full w-full"
+          className="z-45 absolute inset-0 h-full w-full"
           particleColor="#FFFFFF"
           speed={0.7}
         />
