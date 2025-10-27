@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import { useTime, motion, useTransform } from "motion/react";
-
 import Title from "@/components/ui/title";
 
 import Bottle from "@/public/engineering/landing/Bottle.svg";
@@ -21,11 +20,11 @@ const About = () => {
 
   const largeFairyY = useTransform(
     time,
-    (latest) => Math.sin((latest + 1500) / 1400) * 5,
+    (latest) => Math.sin((latest + 1500) / 1400) * 10,
   );
   const largeFairyX = useTransform(
     time,
-    (latest) => Math.cos(latest / 1600) * 2,
+    (latest) => Math.cos(latest / 1600) * 5,
   );
   return (
     <div
