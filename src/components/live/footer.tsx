@@ -9,17 +9,16 @@ import LargeFairy from "@/public/engineering/landing/LargeFairy.svg";
 import Link from "next/link";
 import { useTime, motion, useTransform } from "motion/react";
 
-
 const Footer = () => {
-    const time = useTime();
+  const time = useTime();
   const largeFairyY = useTransform(
-      time,
-      (latest) => Math.sin((latest + 1500) / 1400) * 10,
-    );
-    const largeFairyX = useTransform(
-      time,
-      (latest) => Math.cos(latest / 1600) * 5,
-    );
+    time,
+    (latest) => Math.sin((latest + 1500) / 1400) * 10,
+  );
+  const largeFairyX = useTransform(
+    time,
+    (latest) => Math.cos(latest / 1600) * 5,
+  );
   return (
     <div
       className="relative w-full"
@@ -27,12 +26,9 @@ const Footer = () => {
         background: "linear-gradient(to bottom, #C6517F 0%, #98436B 100%)",
       }}
     >
-      <motion.div
-            className="pl-6"
-            style={{ y: largeFairyY, x: largeFairyX }}
-          >
-            <Image src={LargeFairy} alt="Large Fairy"/>
-          </motion.div>
+      <motion.div className="pl-6" style={{ y: largeFairyY, x: largeFairyX }}>
+        <Image src={LargeFairy} alt="Large Fairy" />
+      </motion.div>
       <Image
         src={FooterAsset}
         className="w-full"

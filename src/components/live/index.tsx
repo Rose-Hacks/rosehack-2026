@@ -13,59 +13,59 @@ import Footer from "./footer";
 const Live = () => {
   return (
     <>
-      <div className="h-screen overflow-x-hidden overflow-y-hidden relative">
+      <div className="relative h-screen overflow-x-hidden overflow-y-hidden">
         <Landing />
-                <SparklesCore
-                        background="transparent"
-                        minSize={0.6}
-                        maxSize={1.7}
-                        particleDensity={45}
-                        className="absolute inset-0 w-full h-full z-50"
-                        particleColor="#FFFFFF"
-                        speed={0.7}
-                      />
+        <SparklesCore
+          background="transparent"
+          minSize={0.6}
+          maxSize={1.7}
+          particleDensity={45}
+          className="absolute inset-0 z-50 h-full w-full"
+          particleColor="#FFFFFF"
+          speed={0.7}
+        />
       </div>
-      <div className = "relative ">
-      <About />
-              <SparklesCore
-                        background="transparent"
-                        minSize={0.6}
-                        maxSize={1.7}
-                        particleDensity={25}
-                        className="absolute inset-0 w-full h-full z-50"
-                        particleColor="#FFFFFF"
-                        speed={0.7}
-                      />
+      <div className="relative">
+        <About />
+        <SparklesCore
+          background="transparent"
+          minSize={0.6}
+          maxSize={1.7}
+          particleDensity={25}
+          className="absolute inset-0 z-50 h-full w-full"
+          particleColor="#FFFFFF"
+          speed={0.7}
+        />
       </div>
       {/* <Tracks />
       <Schedule />
       <Sponsors /> */}
       <div className="relative">
-      <Team />
-              <SparklesCore
-                        background="transparent"
-                        minSize={0.6}
-                        maxSize={1.7}
-                        particleDensity={25}
-                        className="absolute inset-0 w-full h-full"
-                        particleColor="#FFFFFF"
-                        speed={0.7}
-                      />
+        <Team />
+        <SparklesCore
+          background="transparent"
+          minSize={0.6}
+          maxSize={1.7}
+          particleDensity={25}
+          className="absolute inset-0 h-full w-full"
+          particleColor="#FFFFFF"
+          speed={0.7}
+        />
       </div>
       {/* <Committees />
       <Judges />
       <FAQ /> */}
       <div className="relative">
-      <Footer />
-      <SparklesCore
-                background="transparent"
-                minSize={0.6}
-                maxSize={1.7}
-                particleDensity={45}
-                className="absolute inset-0 w-full h-full"
-                particleColor="#FFFFFF"
-                speed={0.7}
-              />
+        <Footer />
+        <SparklesCore
+          background="transparent"
+          minSize={0.6}
+          maxSize={1.7}
+          particleDensity={45}
+          className="absolute inset-0 h-full w-full"
+          particleColor="#FFFFFF"
+          speed={0.7}
+        />
       </div>
     </>
   );
