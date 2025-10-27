@@ -6,6 +6,7 @@ import type { Container, SingleOrMultiple } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
 import { cn } from "@/utils/tailwind";
 import { motion, useAnimation } from "framer-motion";
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
 type ParticlesProps = {
   id?: string;
