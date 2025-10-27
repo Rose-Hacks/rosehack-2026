@@ -17,7 +17,7 @@ const Team = () => {
         {Teams.map(({ name, image, role }, index) => (
           <div
             key={index}
-            className="relative m-2 flex w-10/12 flex-col items-center justify-center z-20 lg:w-1/4"
+            className="relative z-20 m-2 flex w-10/12 flex-col items-center justify-center lg:w-1/4"
           >
             <Member name={name} role={role} image={image} />
           </div>
