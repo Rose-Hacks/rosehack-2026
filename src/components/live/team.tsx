@@ -5,12 +5,12 @@ import Teams from "@/data/team";
 const Team = () => {
   return (
     <div
-      className="py-2 md:py-6"
+      className="py-2 md:py-6 h-auto"
       style={{
         background: "linear-gradient(to bottom, #F46055 0%, #C6517F 100%)",
       }}
     >
-      <div className="flex justify-center">
+      <div className=" relative flex justify-center">
         <Title>Meet The Team</Title>
       </div>
       <div className="mx-4 flex flex-col place-items-center md:mx-8 md:flex-row md:flex-wrap md:items-center md:justify-center">
