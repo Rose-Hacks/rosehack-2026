@@ -1,19 +1,19 @@
 import { StaticImageData } from "next/image";
 
-import Alessandro from "@/public/engineering/landing/headshots/Alessandro.webp";
-import Arielle from "@/public/engineering/landing/headshots/Arielle.webp";
-import Charleen from "@/public/engineering/landing/headshots/Charleen.JPG";
-import Fatima from "@/public/engineering/landing/headshots/Fatima.webp";
-import Jasmine from "@/public/engineering/landing/headshots/Jasmine.JPG";
-import Jia from "@/public/engineering/landing/headshots/Jia.webp";
-import Kaylie from "@/public/engineering/landing/headshots/Kaylie.JPG";
-import Kevin from "@/public/engineering/landing/headshots/Kevin.JPG";
-import Lydia from "@/public/engineering/landing/headshots/Lydia.JPG";
-import Michelle from "@/public/engineering/landing/headshots/Michelle.webp";
-import Quin from "@/public/engineering/landing/headshots/Quin.JPG";
-import Selina from "@/public/engineering/landing/headshots/Selina.JPG";
-import Shane from "@/public/engineering/landing/headshots/Shane.JPG";
-import Shreya from "@/public/engineering/landing/headshots/Shreya.JPG";
+import Alessandro from "@/public/engineering/landing/headshots/Alessandro.png";
+import Arielle from "@/public/engineering/landing/headshots/Arielle.png";
+import Charleen from "@/public/engineering/landing/headshots/Charleen.png";
+import Fatima from "@/public/engineering/landing/headshots/Fatima.png";
+import Jasmine from "@/public/engineering/landing/headshots/Jasmine.png";
+import Jia from "@/public/engineering/landing/headshots/Jia.png";
+import Kaylie from "@/public/engineering/landing/headshots/Kaylie.png";
+import Kevin from "@/public/engineering/landing/headshots/Kevin.png";
+import Lydia from "@/public/engineering/landing/headshots/Lydia.png";
+import Michelle from "@/public/engineering/landing/headshots/Michelle.png";
+import Quin from "@/public/engineering/landing/headshots/Quin.png";
+import Selina from "@/public/engineering/landing/headshots/Selina.png";
+import Shane from "@/public/engineering/landing/headshots/Shane.png";
+import Shreya from "@/public/engineering/landing/headshots/Shreya.png";
 
 export interface Team {
   name: string;
