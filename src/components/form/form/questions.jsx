@@ -29,7 +29,7 @@ const Questions = ({
   };
 
   return (
-    <div className="flex w-full flex-col gap-5">
+    <div className="flex w-full flex-col gap-5 bg-transparent font-rosehack-main text-white">
       {Object.values(fields).map((field, index) => (
         <div key={index}>
           {field.input === "description" &&
