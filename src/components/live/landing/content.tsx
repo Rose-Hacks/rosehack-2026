@@ -9,9 +9,9 @@ const Content = () => {
       <div className="flex w-full flex-col items-center justify-center gap-4 rounded-3xl p-3">
         <div className="whitespace-nowrap rounded-3xl text-center font-rosehack-main text-lg text-white md:whitespace-normal md:text-6xl">
           ROSEHACK 2026
-          {/* <div className="m-3 flex items-center justify-center whitespace-nowrap rounded-3xl px-7 text-center text-lg md:whitespace-normal md:text-3xl">
-            COMING SOON
-          </div> */}
+          <div className="m-3 flex items-center justify-center whitespace-nowrap rounded-3xl px-7 text-center text-lg md:whitespace-normal md:text-3xl">
+            January 24-25
+          </div>
           <Countdown
             classNames={{
               unit: "text-white",
