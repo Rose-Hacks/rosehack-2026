@@ -24,7 +24,7 @@ const Terms = ({ options, onClick, onMLHClick }: props) => {
     <>
       <p className="mb-1 mt-3 font-semibold">
         Terms and Conditions
-        <span className="text-red-500">*</span>
+        <span className="text-red-500"> *</span>
       </p>
       <ul className="mb-4 list-disc pl-5 text-sm">
         {options.map((option, index) => (

@@ -10,7 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-hackathon-timer-add text-slate-50 hover:bg-hackathon-timer-add/90 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-50/90",
+          "bg-rosehack-yellow text-gray-800 hover:bg-rosehack-yellow/80 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-50/90 font-rosehack-alt",
         destructive:
           "bg-hackathon-timer-clear text-slate-50 hover:bg-hackathon-timer-clear/90 dark:bg-red-900 dark:text-slate-50 dark:hover:bg-red-900/90",
         outline:
