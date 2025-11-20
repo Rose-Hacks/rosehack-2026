@@ -29,7 +29,7 @@ const Questions = ({
   };
 
   return (
-    <div className="flex w-full flex-col gap-5">
+    <div className="flex w-full flex-col gap-5 bg-transparent font-rosehack-main text-white">
       {Object.values(fields).map((field, index) => (
         <div key={index}>
           {field.input === "description" &&
@@ -50,7 +50,9 @@ const Questions = ({
               <div className="pb-1">
                 <Label htmlFor={field.name} className="font-semibold">
                   {field.title}
-                  {field.required && <span className="text-red-500">*</span>}
+                  {field.required && (
+                    <span className="font-light text-red-500"> *</span>
+                  )}
                 </Label>
               </div>
               <Input
@@ -82,7 +84,9 @@ const Questions = ({
             <>
               <p className="mb-1 font-semibold">
                 {field.text}
-                {field.required && <span className="text-red-500">*</span>}
+                {field.required && (
+                  <span className="font-light text-red-500"> *</span>
+                )}
               </p>
               <div className="grid gap-2 md:grid-cols-2">
                 {field.options.map((option, i) => (
@@ -132,7 +136,9 @@ const Questions = ({
             <>
               <p className="mb-1 font-semibold">
                 {field.text}
-                {field.required && <span className="text-red-500">*</span>}
+                {field.required && (
+                  <span className="font-light text-red-500"> *</span>
+                )}
               </p>
               <RadioGroup
                 value={object[field.field]}
@@ -157,7 +163,9 @@ const Questions = ({
               <div className="mb-1">
                 <Label htmlFor={field.name} className="font-semibold">
                   {field.title}
-                  {field.required && <span className="text-red-500">*</span>}
+                  {field.required && (
+                    <span className="font-light text-red-500">*</span>
+                  )}
                 </Label>
               </div>
               <Textarea
@@ -191,7 +199,7 @@ const Questions = ({
         <Link
           href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
           target="_blank"
-          className="mt-1 flex items-center text-[#F55654] no-underline hover:text-opacity-65"
+          className="mt-1 flex items-center text-white no-underline hover:text-opacity-65"
         >
           MLH Code of Conduct
           <SquareArrowOutUpRight className="mx-2" size={15} />
@@ -199,7 +207,7 @@ const Questions = ({
         <Link
           href="https://mlh.io/privacy"
           target="_blank"
-          className="mt-3 flex items-center text-[#F55654] no-underline hover:text-opacity-65"
+          className="mt-3 flex items-center text-white no-underline hover:text-opacity-65"
         >
           MLH Privacy Policy
           <SquareArrowOutUpRight className="mx-2" size={15} />
@@ -207,7 +215,7 @@ const Questions = ({
         <Link
           href="https://github.com/MLH/mlh-policies/blob/main/contest-terms.md"
           target="_blank"
-          className="mt-3 flex items-center text-[#F55654] no-underline hover:text-opacity-65"
+          className="mt-3 flex items-center text-white no-underline hover:text-opacity-65"
         >
           MLH Contest Terms and Conditions
           <SquareArrowOutUpRight className="mx-2" size={15} />

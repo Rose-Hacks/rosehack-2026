@@ -92,7 +92,7 @@ const Select = ({
       {title && (
         <p className="mb-1 font-semibold">
           {title}
-          {required && <span className="text-red-500">*</span>}
+          {required && <span className="font-light text-red-500"> *</span>}
         </p>
       )}
       <DropdownMenu className="max-w-full">
