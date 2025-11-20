@@ -72,6 +72,11 @@ const Form = ({
         className="md: invisible absolute scale-[0.75] md:visible md:right-4 md:top-1/4"
         alt="light"
       />
+      <Image
+        src={light}
+        className="md: invisible absolute mr-8 scale-[0.75] md:visible md:-left-16 md:top-3/4"
+        alt="light"
+      />
       <div className="z-20 mt-4 flex w-full flex-row justify-end space-x-4 pr-6">
         <Button asChild>
           <Link href="/">Back to Home</Link>

@@ -199,7 +199,7 @@ const Questions = ({
         <Link
           href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
           target="_blank"
-          className="mt-1 flex items-center text-[#38B3CB] no-underline hover:text-opacity-65"
+          className="mt-1 flex items-center text-white no-underline hover:text-opacity-65"
         >
           MLH Code of Conduct
           <SquareArrowOutUpRight className="mx-2" size={15} />
@@ -207,7 +207,7 @@ const Questions = ({
         <Link
           href="https://mlh.io/privacy"
           target="_blank"
-          className="mt-3 flex items-center text-[#38B3CB] no-underline hover:text-opacity-65"
+          className="mt-3 flex items-center text-white no-underline hover:text-opacity-65"
         >
           MLH Privacy Policy
           <SquareArrowOutUpRight className="mx-2" size={15} />
@@ -215,7 +215,7 @@ const Questions = ({
         <Link
           href="https://github.com/MLH/mlh-policies/blob/main/contest-terms.md"
           target="_blank"
-          className="mt-3 flex items-center text-[#38B3CB] no-underline hover:text-opacity-65"
+          className="mt-3 flex items-center text-white no-underline hover:text-opacity-65"
         >
           MLH Contest Terms and Conditions
           <SquareArrowOutUpRight className="mx-2" size={15} />

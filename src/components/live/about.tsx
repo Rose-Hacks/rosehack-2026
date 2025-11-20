@@ -45,16 +45,14 @@ const About = () => {
             />
           </div>
           <p className="pt-4">
-            {`Rosehack is UC Riverside's 24-hour hackathon, one of the few
-            women-centric hackathons in California! Founded by the female
-            leaders of the Association for Computing Machinery (ACM-W) and the
-            Society of Women Engineers (SWE).`}
+            {`RoseHack is UC Riverside’s minority focused, 24-hour hackathon, and one of
+the few women-centric hackathons in California. RoseHack is hosted yearly
+by Women in Computing (WINC), a student organization on campus centered
+around supporting, celebrating, and advocating for women and other
+underrepresented groups in all aspects of the computing field.`}
           </p>
           <p>
-            {`Rosehack's mission is to encourage individuals from
-            underrepresented groups in STEM to gain experience, create strong
-            networks, and build amazing projects through their shared passions
-            in Science and Technology.`}
+            {`Our mission here at Rosehack is to support and cultivate the next generation of women in tech. Our theme this year is "SHE-nnovation for Good", centering around projects that celebrate and uplift women's roles in innovation.`}
           </p>
         </div>
         <div className="relative hidden w-3/4 items-center justify-center md:flex md:w-1/4">

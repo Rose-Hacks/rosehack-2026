@@ -18,7 +18,7 @@ const Landing = () => {
         href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=white"
         target="_blank"
         rel="noopener noreferrer"
-        className="z-1 absolute right-3 top-0 z-50 w-12 cursor-pointer md:w-28 lg:right-10"
+        className="absolute right-3 top-0 z-50 w-12 cursor-pointer md:w-28 lg:right-10"
       >
         <Image
           src="https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-white.svg"
@@ -53,26 +53,26 @@ const Landing = () => {
       <Image
         src={light}
         alt="light"
-        className="absolute -top-40 left-10 z-50 scale-[0.7]"
+        className="absolute -top-40 left-10 z-40 scale-[0.7]"
       />
-      <div className="absolute z-50 flex w-fit flex-col items-center justify-center gap-4 md:w-full">
+      <div className="absolute z-40 flex w-fit flex-col items-center justify-center gap-4 md:w-full">
         <Image src={Logo} alt="Rose Hack Logo" className="w-1/5 sm:w-1/12" />
         <Content />
       </div>
       <Image
         src={light}
         alt="light"
-        className="absolute -top-20 right-2 z-50 scale-[0.4]"
+        className="absolute -top-20 right-2 z-40 scale-[0.4]"
       />
       <Image
         src={light}
         alt="light"
-        className="absolute -right-[170px] top-52 z-50 hidden scale-[0.7] sm:block"
+        className="absolute -right-[170px] top-52 z-40 hidden scale-[0.7] sm:block"
       />
       <Image
         src={light}
         alt="light"
-        className="absolute -bottom-5 right-20 z-50 hidden scale-[0.7] sm:block"
+        className="absolute -bottom-5 right-20 z-40 hidden scale-[0.7] sm:block"
       />
       <Image
         src={tree2}

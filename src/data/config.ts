@@ -22,8 +22,8 @@ const data: config = {
   description:
     "UC Riverside's minority focused, 24-hour hackathon, and one of the few women-centric hackathons in California. RoseHack is hosted yearly by Women in Computing (WINC), a student organization on campus centered around supporting, celebrating, and advocating for women and other underrepresented groups in all aspects of the computing field.",
   length: 24,
-  date: new Date("2026-01-25T13:20:00"),
-  end: new Date("2026-01-26T13:20:00"),
+  date: new Date("2026-01-24T13:20:00"),
+  end: new Date("2026-01-25T13:20:00"),
   packet: "",
   devpost: "https://devpost.com/",
   domain: "https://www.rosehack.com",
