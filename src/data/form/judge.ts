@@ -46,9 +46,9 @@ interface Affiliations {
 }
 
 export const AFFILIATIONS: Affiliations = {
+  industry: "Industry",
   professor: "Professor",
   student: "Student",
-  industry: "Industry",
 };
 
 export const FIELDS: Fields = {
@@ -207,7 +207,7 @@ export const ATTRIBUTES: Attributes = {
   phone: "",
   gender: "",
   shirt: "",
-  affiliation: "Professor",
+  affiliation: "Industry",
   title: "",
   company: "",
   photo: "",
