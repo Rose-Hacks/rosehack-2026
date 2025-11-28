@@ -35,7 +35,7 @@ const Form = ({
   );
 
   return (
-    <div className="overflow-scroll-y font-poppins absolute flex w-full flex-col items-center bg-gradient-to-b from-[#FA938C] to-[#456F74]">
+    <div className="overflow-scroll-y font-poppins absolute flex h-full w-full flex-col items-center overflow-x-hidden bg-gradient-to-b from-[#FA938C] to-[#456F74]">
       <Image
         src={leafVine}
         className="absolute left-12 z-10 scale-[1] md:scale-[2]"

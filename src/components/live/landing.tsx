@@ -72,7 +72,7 @@ const Landing = () => {
       <Image
         src={light}
         alt="light"
-        className="absolute -bottom-5 right-20 z-40 hidden scale-[0.7] sm:block"
+        className="absolute -bottom-5 right-20 z-20 hidden scale-[0.7] sm:block"
       />
       <Image
         src={tree2}

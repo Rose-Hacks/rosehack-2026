@@ -21,22 +21,26 @@ const Content = () => {
           />
         </div>
         <div className="flex-col md:flex-row">
-          <div className="z-50 grid grid-cols-1 items-center justify-center gap-3 px-5 py-1 font-rosehack-alt duration-200 hover:scale-105">
-            <Button className="border-rosehack-white/30 hover:border-rosehack-white/40 flex items-center justify-center rounded-xl border-4 bg-rosehack-yellow px-10 text-xl text-gray-800 duration-150 hover:cursor-pointer hover:bg-rosehack-yellow/80">
-              <Link href="/apply/participant">Apply Now!</Link>
-            </Button>
+          <div className="items-center justify-center gap-3 px-5 py-1 font-rosehack-alt duration-200 hover:scale-105">
+            <Link href="/apply/participant">
+              <Button className="border-rosehack-white/30 hover:border-rosehack-white/40 flex w-full items-center justify-center rounded-xl border-4 bg-rosehack-yellow px-10 text-xl text-gray-800 duration-150 hover:cursor-pointer hover:bg-rosehack-yellow/80">
+                Apply Now!
+              </Button>
+            </Link>
           </div>
-          <div className="z-50 grid grid-cols-1 items-center justify-center gap-3 px-5 py-1 font-rosehack-alt duration-200 hover:scale-105">
-            <Button className="border-rosehack-white/30 hover:border-rosehack-white/40 flex items-center justify-center rounded-xl border-4 bg-rosehack-yellow px-10 text-xl text-gray-800 duration-150 hover:cursor-pointer hover:bg-rosehack-yellow/80">
-              <Link target="_blank" href="/sponsorship/Packet.pdf">
+          <div className="items-center justify-center gap-3 px-5 py-1 font-rosehack-alt duration-200 hover:scale-105">
+            <Link target="_blank" href="/sponsorship/Packet.pdf">
+              <Button className="border-rosehack-white/30 hover:border-rosehack-white/40 flex w-full items-center justify-center rounded-xl border-4 bg-rosehack-yellow px-10 text-xl text-gray-800 duration-150 hover:cursor-pointer hover:bg-rosehack-yellow/80">
                 Sponsorship Packet
-              </Link>
-            </Button>
+              </Button>
+            </Link>
           </div>
-          <div className="z-50 grid grid-cols-1 items-center justify-center gap-3 px-5 py-1 font-rosehack-alt duration-200 hover:scale-105">
-            <Button className="border-rosehack-white/30 hover:border-rosehack-white/40 flex items-center justify-center rounded-xl border-4 bg-rosehack-yellow px-10 text-xl text-gray-800 duration-150 hover:cursor-pointer hover:bg-rosehack-yellow/80">
-              <Link href="/judge/register">Judge Application</Link>
-            </Button>
+          <div className="items-center justify-center gap-3 px-5 py-1 font-rosehack-alt duration-200 hover:scale-105">
+            <Link target="_blank" href="/judge/register">
+              <Button className="border-rosehack-white/30 hover:border-rosehack-white/40 flex w-full items-center justify-center rounded-xl border-4 bg-rosehack-yellow px-10 text-xl text-gray-800 duration-150 hover:cursor-pointer hover:bg-rosehack-yellow/80">
+                Judge Application
+              </Button>
+            </Link>
           </div>
         </div>
 
