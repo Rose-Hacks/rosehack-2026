@@ -48,7 +48,7 @@ const Footer = () => {
           </Link>
         </div>
         <p className="w-11/12 text-center font-rosehack-main text-base">
-          {"Made with <3 by the 2026 RoseHack team"}
+          {"Made with <3 by the 2026 RoseHack Team"}
         </p>
       </div>
     </div>
