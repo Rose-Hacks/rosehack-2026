@@ -1,8 +1,6 @@
 export const SHIRTS = ["XS", "S", "M", "L", "XL", "XXL"];
 
 export const GRADES = [
-  "Less than High School",
-  "High School",
   "Undergraduate",
   "Graduate (Masters, Doctoral, etc)",
   "Code School / Bootcamp",
@@ -14,7 +12,7 @@ export const GRADES = [
 
 export const GENDERS = ["Female", "Male", "Nonbinary", "Other"];
 
-export const AGES = ["<16", "16", "17", "18", "19", "20", "21", "22", "23+"];
+export const AGES = ["18", "19", "20", "21", "22", "23+"];
 
 export const MAJORS = [
   "Accounting",

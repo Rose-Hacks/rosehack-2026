@@ -19,7 +19,7 @@ const Live = () => {
           background="transparent"
           minSize={0.6}
           maxSize={1.7}
-          particleDensity={45}
+          particleDensity={40}
           className="z-45 absolute inset-0 h-full w-full"
           particleColor="#FFFFFF"
           speed={0.7}

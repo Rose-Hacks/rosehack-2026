@@ -2,6 +2,7 @@ import { StaticImageData } from "next/image";
 
 import Alessandro from "@/public/engineering/landing/headshots/Alessandro.webp";
 import Arielle from "@/public/engineering/landing/headshots/Arielle.webp";
+import Arya from "@/public/engineering/landing/headshots/Arya.webp";
 import Charleen from "@/public/engineering/landing/headshots/Charleen.webp";
 import Fatima from "@/public/engineering/landing/headshots/Fatima.webp";
 import Jasmine from "@/public/engineering/landing/headshots/Jasmine.webp";
@@ -35,12 +36,12 @@ const Teams: Team[] = [
   {
     name: "Lydia",
     image: Lydia,
-    role: "Operations",
+    role: "Operations Co-Lead",
   },
   {
     name: "Jia",
     image: Jia,
-    role: "Operations",
+    role: "Operations Co-Lead",
   },
   {
     name: "Shreya",
@@ -55,7 +56,7 @@ const Teams: Team[] = [
   {
     name: "Michelle",
     image: Michelle,
-    role: "Sponsorship",
+    role: "Sponsorship Lead",
   },
   {
     name: "Arielle",
@@ -68,9 +69,14 @@ const Teams: Team[] = [
     role: "Sponsorship",
   },
   {
+    name: "Arya",
+    image: Arya,
+    role: "Sponsorship",
+  },
+  {
     name: "Jasmine",
     image: Jasmine,
-    role: "Marketing",
+    role: "Marketing Lead",
   },
   {
     name: "Kaylie",
@@ -85,7 +91,7 @@ const Teams: Team[] = [
   {
     name: "Kevin",
     image: Kevin,
-    role: "SWE",
+    role: "SWE Lead",
   },
   {
     name: "Quin",
