@@ -96,7 +96,10 @@ const Select = ({
         </p>
       )}
       <DropdownMenu className="max-w-full">
-        <DropdownMenuTrigger className="w-full" asChild>
+        <DropdownMenuTrigger
+          className="w-full border-x-0 border-b-2 border-t-0 bg-transparent hover:bg-white/20"
+          asChild
+        >
           <Button
             className="w-full justify-between whitespace-normal break-words text-left capitalize"
             variant="outline"
@@ -105,9 +108,7 @@ const Select = ({
             {selected ? (
               selected
             ) : (
-              <p className="font-normal text-hackathon-gray-200">
-                {placeholder}
-              </p>
+              <p className="font-normal text-[#e5c9c96d]">{placeholder}</p>
             )}
             <ChevronDown />
           </Button>
