@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import Logo from "@/public/engineering/logo.svg";
 import Content from "./landing/content";
 
@@ -13,22 +12,6 @@ import path from "@/public/engineering/landing/path.svg";
 const Landing = () => {
   return (
     <div className="relative flex h-screen w-full flex-col items-center justify-center bg-gradient-to-b from-[#F77652] via-[#F55654] to-[#98436B]">
-      <Link
-        id="mlh-trust-badge"
-        href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=white"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="absolute right-3 top-0 z-50 w-12 cursor-pointer md:w-28 lg:right-10"
-      >
-        <Image
-          src="https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-white.svg"
-          alt="Major League Hacking 2026 Hackathon Season"
-          className="w-full cursor-pointer"
-          width={100}
-          height={100}
-        />
-      </Link>
-
       <Image
         src={path}
         alt="path"

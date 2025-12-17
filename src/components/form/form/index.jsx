@@ -30,6 +30,8 @@ const Form = ({
 }) => {
   const [loading, setLoading] = useState(false);
 
+  const isJudgeApplication = header === "JUDGE APPLICATION";
+
   const [state, setState] = useState(
     typeof object.roles[object.form] !== "undefined" && !bypass ? 0 : 1,
   );
@@ -119,7 +121,7 @@ const Form = ({
                 packet={packet}
               />
             ) : (
-              <Confirmation />
+              <Confirmation judge={isJudgeApplication ? "true" : undefined} />
             )}
           </div>
         </div>
