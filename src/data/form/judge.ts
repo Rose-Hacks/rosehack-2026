@@ -85,7 +85,7 @@ export const FIELDS: Fields = {
     title: "Last Name",
     maxLength: 50,
     width: 12,
-    editable: false,
+    editable: true,
     required: true,
   },
   email: {
