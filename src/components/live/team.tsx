@@ -5,10 +5,7 @@ import Teams from "@/data/team";
 const Team = () => {
   return (
     <div
-      className="h-auto py-2 md:py-6"
-      style={{
-        background: "linear-gradient(to bottom, #F46055 0%, #C6517F 100%)",
-      }}
+      className="h-auto py-2 md:py-6 bg-gradient-to-b from-[#F46055] to-[#DD586A]"
     >
       <div className="relative flex justify-center">
         <Title>Meet The Team</Title>

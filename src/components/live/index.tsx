@@ -8,13 +8,13 @@ import PreSponsors from "./preSponsors";
 import Team from "./team";
 // import Committees from "./committees";
 // import Judges from "./judges";
-// import FAQ from "./faq";
+import FAQ from "./faq";
 import Footer from "./footer";
 
 const Live = () => {
   return (
     <div className="relative overflow-x-hidden">
-      {/* <SparklesCore
+      <SparklesCore
         background="transparent"
         minSize={0.6}
         maxSize={1.7}
@@ -22,19 +22,20 @@ const Live = () => {
         className="absolute inset-0 z-10 h-full w-full"
         particleColor="#FFFFFF"
         speed={0.7}
-      /> */}
+      />
       <div className="h-screen overflow-x-hidden overflow-y-hidden">
         <Landing />
       </div>
       <About />
       <Tracks />
       {/* <Schedule /> */}
-      <PreSponsors />
+      {/* <PreSponsors /> */}
       {/* <Sponsors /> */}
-      <Team />
       {/* <Committees />
       <Judges />
-      <FAQ /> */}
+      } */}
+      <Team />
+      <FAQ />
       <Footer />
     </div>
   );
