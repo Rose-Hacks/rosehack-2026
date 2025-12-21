@@ -4,10 +4,10 @@ import About from "./about";
 // import Schedule from "./schedule";
 import Tracks from "./tracks";
 import PreSponsors from "./preSponsors";
-// import Sponsors from "./sponsors";
+import Sponsors from "./sponsors";
 import Team from "./team";
 // import Committees from "./committees";
-// import Judges from "./judges";
+import Judges from "./judges";
 import FAQ from "./faq";
 import Footer from "./footer";
 
@@ -29,11 +29,10 @@ const Live = () => {
       <About />
       <Tracks />
       {/* <Schedule /> */}
-      {/* <PreSponsors /> */}
-      {/* <Sponsors /> */}
-      {/* <Committees />
+      <PreSponsors />
+      <Sponsors />
+      {/* <Committees /> */}
       <Judges />
-      } */}
       <Team />
       <FAQ />
       <Footer />

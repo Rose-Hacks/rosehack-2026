@@ -3,7 +3,7 @@ import preSponsorBranch from "@/public/engineering/landing/preSponsorBranch.svg"
 
 const PreSponsors = () => {
   return (
-    <div className="bg-gradient-to-b from-[#F46055] to-[#417C80]">
+    <div className="bg-gradient-to-b from-[#F46055] to-[#9C6E6B]">
       <Image
         src={preSponsorBranch}
         alt="Branch with hanging lantern"
