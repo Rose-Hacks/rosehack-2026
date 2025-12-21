@@ -4,9 +4,7 @@ import Teams from "@/data/team";
 
 const Team = () => {
   return (
-    <div
-      className="h-auto py-2 md:py-6 bg-gradient-to-b from-[#F46055] to-[#DD586A]"
-    >
+    <div className="h-auto bg-gradient-to-b from-[#F46055] to-[#DD586A] py-2 md:py-6">
       <div className="relative flex justify-center">
         <Title>Meet The Team</Title>
       </div>
