@@ -13,7 +13,7 @@ const Team = () => {
       <div className="relative flex justify-center">
         <Title>Meet The Team</Title>
       </div>
-      <div className="mx-4 flex flex-col place-items-center md:mx-8 md:flex-row md:flex-wrap md:items-center md:justify-center">
+      <div className="z-20 mx-4 flex flex-col place-items-center md:mx-8 md:flex-row md:flex-wrap md:items-center md:justify-center">
         {Teams.map(({ name, image, role }, index) => (
           <div
             key={index}
