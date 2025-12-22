@@ -9,7 +9,7 @@ interface teamProp {
 const Member = ({ name, image, role }: teamProp) => {
   return (
     <div className="flex flex-col items-center justify-center p-6">
-      <div className="mb-4 aspect-square w-3/4 cursor-pointer overflow-hidden rounded-full md:w-1/2">
+      <div className="mb-4 aspect-square w-full overflow-hidden rounded-full md:w-1/2">
         <Image src={image} alt={name} className="h-full w-full object-cover" />
       </div>
 

@@ -2,9 +2,9 @@ import Title from "@/components/ui/title";
 import Member from "./member";
 import Sponsors from "@/data/sponsors";
 
-const Team = () => {
+const Sponsor = () => {
   return (
-    <div className="bg-gradient-to-b from-[#9C6E6B] to-[#41675c]">
+    <div className="h-auto bg-gradient-to-b from-[#9C6E6B] to-[#41675c]">
       <div className="relative flex justify-center">
         <Title>Sponsors</Title>
       </div>
@@ -22,4 +22,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default Sponsor;
