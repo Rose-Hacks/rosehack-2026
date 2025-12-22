@@ -37,37 +37,37 @@ const Tracks = () => {
       <Image
         className="absolute bottom-[40%] z-10 h-1/2 w-min sm:hidden"
         src={sign}
-        alt="Tracks Sign Four"
+        alt="Tracks Sign - 1/1"
       />
       <Image
         className="absolute bottom-[37%] left-[20%] z-10 hidden h-[44%] w-min sm:block lg:hidden"
         src={signLeft}
-        alt="Hills background"
+        alt="Tracks Sign - 1/2"
       />
       <Image
         className="absolute bottom-[45%] right-[17%] z-10 hidden h-2/5 w-min sm:block lg:hidden"
         src={signRight}
-        alt="Hills background"
+        alt="Tracks Sign - 2/2"
       />
       <Image
         className="absolute bottom-[45%] right-[6%] z-10 hidden h-[35%] w-min lg:block"
         src={lgSignOne}
-        alt="Tracks Sign One"
+        alt="Tracks Sign - 1/4"
       />
       <Image
         className="absolute bottom-[52%] right-[31%] z-10 hidden h-[30%] w-min lg:block"
         src={lgSignTwo}
-        alt="Tracks Sign Two"
+        alt="Tracks Sign - 2/4"
       />
       <Image
         className="absolute bottom-[35%] left-[24%] z-10 hidden h-2/5 w-min lg:block"
         src={lgSignThree}
-        alt="Tracks Sign Three"
+        alt="Tracks Sign - 3/4"
       />
       <Image
         className="absolute bottom-[50%] left-[7%] z-10 hidden h-1/3 w-min lg:block"
         src={lgSignFour}
-        alt="Tracks Sign Four"
+        alt="Tracks Sign - 4/4"
       />
     </div>
   );

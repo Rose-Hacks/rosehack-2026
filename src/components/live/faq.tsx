@@ -9,8 +9,6 @@ import Title from "@/components/ui/title";
 
 const FAQ = () => {
   return (
-    // DD586A
-    // C6517F
     <div className="z-20 flex w-full flex-col items-center bg-gradient-to-b from-[#DD586A] to-[#C6517F] pb-4 text-white">
       <Title>FAQ</Title>
       <div className="z-20 w-10/12">
