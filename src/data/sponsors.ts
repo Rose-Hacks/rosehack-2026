@@ -1,11 +1,11 @@
 import { StaticImageData } from "next/image";
 
-import ThreeDConn from "@/public/engineering/landing/sponsors/3dconn.png";
-import Efg from "@/public/engineering/landing/sponsors/efg.png";
-import Hhkb from "@/public/engineering/landing/sponsors/hhkb.png";
-import Bcoe from "@/public/engineering/landing/sponsors/ucrbcoe.png";
-import Winc from "@/public/engineering/landing/sponsors/winc.png";
-import CodeRabbit from "@/public/engineering/landing/sponsors/codeRabbit.png";
+import ThreeDConn from "@/public/engineering/landing/sponsors/3dconn.webp";
+import Efg from "@/public/engineering/landing/sponsors/efg.webp";
+import Hhkb from "@/public/engineering/landing/sponsors/hhkb.webp";
+import Bcoe from "@/public/engineering/landing/sponsors/ucrbcoe.webp";
+import Winc from "@/public/engineering/landing/sponsors/winc.webp";
+import CodeRabbit from "@/public/engineering/landing/sponsors/codeRabbit.webp";
 
 export interface Team {
   name: string;
