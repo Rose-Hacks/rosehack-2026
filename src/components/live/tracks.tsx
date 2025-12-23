@@ -29,7 +29,7 @@ const Tracks = () => {
         fill
       />
       <Image
-        className="absolute bottom-0 z-10 min-h-full w-full object-contain sm:hidden"
+        className="absolute bottom-0 z-10 min-h-full w-full object-cover sm:hidden"
         src={hillsSmall}
         alt="Hills background"
         fill
