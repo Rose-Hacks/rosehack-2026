@@ -11,8 +11,9 @@ const Confirmation = ({ judge }: ConfirmationProps) => {
     <>
       <Confetti height={height} width={width} />
       <p className="text-white">
-        Thank you for filling out the form. Please watch your email for an
-        update soon.
+        Thank you for filling out the form. Please{" "}
+        <span className="font-bold">check your email for confirmation</span> and
+        for updates soon.
       </p>
       {judge && (
         <p className="text-white">
