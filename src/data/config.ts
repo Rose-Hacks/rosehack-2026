@@ -27,8 +27,8 @@ const data: config = {
   packet: "",
   devpost: "https://devpost.com/",
   domain: "https://www.rosehack.com",
-  instagram: "https://www.instagram.com",
-  linkedin: "https://www.linkedin.com",
+  instagram: "https://www.instagram.com/rosehackucr/",
+  linkedin: "https://www.linkedin.com/company/rosehack/",
   discord: "https://www.discord.com",
   heart: "🤎",
 };
