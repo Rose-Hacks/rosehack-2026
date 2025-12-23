@@ -16,8 +16,8 @@ type config = {
 };
 
 const data: config = {
-  name: "Rosehack 2026",
-  short_name: "Rosehack 2026 Site",
+  name: "RoseHack 2026",
+  short_name: "RoseHack 2026 Site",
   email: "rosehackucr@gmail.com",
   description:
     "UC Riverside's minority focused, 24-hour hackathon, and one of the few women-centric hackathons in California. RoseHack is hosted yearly by Women in Computing (WINC), a student organization on campus centered around supporting, celebrating, and advocating for women and other underrepresented groups in all aspects of the computing field.",
