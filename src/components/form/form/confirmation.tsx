@@ -10,12 +10,12 @@ const Confirmation = ({ judge }: ConfirmationProps) => {
   return (
     <>
       <Confetti height={height} width={width} />
-      <p>
-        Thank you for filling out the interest form. Please watch your email for
-        an update soon.
+      <p className="text-white">
+        Thank you for filling out the form. Please watch your email for an
+        update soon.
       </p>
       {judge && (
-        <p>
+        <p className="text-white">
           Please also send us an email at rosehackucr@gmail.com, with your name,
           photo, and other relevant information. Thank you!
         </p>

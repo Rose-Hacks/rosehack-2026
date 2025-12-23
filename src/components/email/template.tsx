@@ -29,7 +29,7 @@ const Template = ({ children, name, preview }: props) => {
           <Container className="mx-auto my-[40px] max-w-[465px] rounded border border-solid border-[#eaeaea] p-[20px]">
             <Section className="mt-[32px]">
               <Img
-                src="https://www.rosehack.com/engineering/logoemail.png"
+                src="https://www.rosehack.com/engineering/logoemail.webp"
                 width="40"
                 height="37"
                 alt="RoseHack Logo"

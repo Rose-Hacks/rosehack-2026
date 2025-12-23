@@ -18,8 +18,8 @@ const sans = InclusiveSans({
 });
 
 export const metadata = {
-  title: "Rosehack 2026",
-  description: "Rosehack is a 24 Hour Women Centric Hackathon hosted by UCR.",
+  title: "RoseHack 2026",
+  description: "RoseHack is a 24 Hour Women Centric Hackathon hosted by UCR.",
 };
 
 type Props = {
