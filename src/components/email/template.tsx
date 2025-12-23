@@ -6,9 +6,7 @@ import {
   Heading,
   Hr,
   Html,
-  Img,
   Preview,
-  Section,
   Text,
   Tailwind,
 } from "@react-email/components";
@@ -27,7 +25,7 @@ const Template = ({ children, name, preview }: props) => {
       <Tailwind>
         <Body className="mx-auto my-auto bg-white px-2 font-sans">
           <Container className="mx-auto my-[40px] max-w-[465px] rounded border border-solid border-[#eaeaea] p-[20px]">
-            <Section className="mt-[32px]">
+            {/* <Section className="mt-[32px]">
               <Img
                 src="https://www.rosehack.com/engineering/logoemail.webp"
                 width="40"
@@ -35,7 +33,7 @@ const Template = ({ children, name, preview }: props) => {
                 alt="RoseHack Logo"
                 className="mx-auto my-0"
               />
-            </Section>
+            </Section> */}
             <Heading className="mx-0 my-[30px] p-0 text-center text-[24px] font-normal text-black">
               Thank you for applying!
             </Heading>
