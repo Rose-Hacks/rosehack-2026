@@ -19,11 +19,12 @@ const Participant = () => {
         <p className="pb-4">
           Welcome to RoseHack 2026. Thank you for considering to become a judge,
           we appreciate your efforts to help support RoseHack 2026. RoseHack
-          2026 is a UC Riverside's minority focused, 24-hour hackathon, and one
-          of the few women-centric hackathons in California. RoseHack is hosted
-          yearly by Women in Computing (WINC), a student organization on campus
-          centered around supporting, celebrating, and advocating for women and
-          other underrepresented groups in all aspects of the computing field.
+          2026 is a UC Riverside&apos;s minority focused, 24-hour hackathon, and
+          one of the few women-centric hackathons in California. RoseHack is
+          hosted yearly by Women in Computing (WINC), a student organization on
+          campus centered around supporting, celebrating, and advocating for
+          women and other underrepresented groups in all aspects of the
+          computing field.
         </p>
 
         <p className="pb-4">
