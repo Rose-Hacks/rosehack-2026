@@ -6,6 +6,8 @@ import Hhkb from "@/public/engineering/landing/sponsors/hhkb.webp";
 import Bcoe from "@/public/engineering/landing/sponsors/ucrbcoe.webp";
 import Winc from "@/public/engineering/landing/sponsors/winc.webp";
 import CodeRabbit from "@/public/engineering/landing/sponsors/codeRabbit.webp";
+import Unibee from "@/public/engineering/landing/sponsors/unibee.png";
+import Wolfram from "@/public/engineering/landing/sponsors/wolfram.png";
 
 export interface Team {
   name: string;
@@ -36,6 +38,14 @@ const Teams: Team[] = [
   {
     name: "Code Rabbit",
     image: CodeRabbit,
+  },
+  {
+    name: "Unibee",
+    image: Unibee,
+  },
+  {
+    name: "Wolfram",
+    image: Wolfram,
   },
 ];
 
