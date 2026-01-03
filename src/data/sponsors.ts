@@ -9,12 +9,12 @@ import CodeRabbit from "@/public/engineering/landing/sponsors/codeRabbit.webp";
 import Unibee from "@/public/engineering/landing/sponsors/unibee.png";
 import Wolfram from "@/public/engineering/landing/sponsors/wolfram.png";
 
-export interface Team {
+export interface Sponsor {
   name: string;
   image: StaticImageData;
 }
 
-const Teams: Team[] = [
+const Sponsors: Sponsor[] = [
   {
     name: "WINC",
     image: Winc,
@@ -49,4 +49,4 @@ const Teams: Team[] = [
   },
 ];
 
-export default Teams;
+export default Sponsors;
