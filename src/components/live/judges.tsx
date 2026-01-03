@@ -16,14 +16,14 @@ const Judges = () => {
           {JudgeNames.map(({ name, image, role }, index) => (
             <div
               key={index}
-              className="relative z-20 m-2 flex w-5/12 flex-col px-4 md:w-1/5"
+              className="relative z-20 m-2 flex w-5/12 flex-col px-4 lg:w-1/5"
             >
               <Member name={name} image={image} role={role} />
             </div>
           ))}
         </div>
       </div>
-      <div className="mt-0 h-24 bg-gradient-to-b from-[#415237] to-[#41523700] sm:h-72 md:h-96">
+      <div className="mt-0 h-72 bg-gradient-to-b from-[#415237] to-[#41523700] md:h-96">
         <Image
           src={postJudgeBranch}
           alt="Base of tree with leaves"

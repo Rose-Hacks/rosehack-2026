@@ -20,7 +20,7 @@ import sign from "@/public/engineering/landing/smSign.svg";
 
 const Tracks = () => {
   return (
-    <div className="relative flex h-[85vh] flex-col items-center overflow-y-hidden bg-[#F46055] md:h-[100vh]">
+    <div className="relative flex h-[70vh] flex-col items-center overflow-y-hidden bg-[#F46055] md:h-[100vh]">
       <Title>Tracks</Title>
       <Image
         className="absolute z-0 hidden min-h-full w-full object-contain sm:flex"

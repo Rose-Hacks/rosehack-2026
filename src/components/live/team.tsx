@@ -12,7 +12,7 @@ const Team = () => {
         {Teams.map(({ name, image, role }, index) => (
           <div
             key={index}
-            className="relative z-20 m-2 flex w-5/12 flex-col px-4 md:w-1/5 md:justify-center"
+            className="relative z-20 m-2 flex w-5/12 flex-col px-4 md:justify-center lg:w-1/5"
           >
             <Member name={name} role={role} image={image} />
           </div>
