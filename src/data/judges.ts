@@ -1,14 +1,14 @@
 import { StaticImageData } from "next/image";
 
-import AmedeoAlberio from "@/public/engineering/landing/judges/Amedeo_Alberio.png";
-import AribaHasan from "@/public/engineering/landing/judges/Ariba_Hasan.png";
-import AshokKumar from "@/public/engineering/landing/judges/Ashok_Kumar.png";
-import JoshuaCandelaria from "@/public/engineering/landing/judges/Joshua_Candelaria.png";
-import RamakantSamal from "@/public/engineering/landing/judges/Ramakant_Samal.png";
-import RobinWang from "@/public/engineering/landing/judges/Robin_Wang.jpg";
-import AshishDibouliya from "@/public/engineering/landing/judges/Ashish_Dibouliya.jpg";
-import SancheeKaushik from "@/public/engineering/landing/judges/Sanchee_Kaushik.jpg";
-import SandeepKhandelwal from "@/public/engineering/landing/judges/Sandeep_Khandelwal.png";
+import AmedeoAlberio from "@/public/engineering/landing/judges/Amedeo_Alberio.webp";
+import AribaHasan from "@/public/engineering/landing/judges/Ariba_Hasan.webp";
+import AshokKumar from "@/public/engineering/landing/judges/Ashok_Kumar.webp";
+import JoshuaCandelaria from "@/public/engineering/landing/judges/Joshua_Candelaria.webp";
+import RamakantSamal from "@/public/engineering/landing/judges/Ramakant_Samal.webp";
+import RobinWang from "@/public/engineering/landing/judges/Robin_Wang.webp";
+import AshishDibouliya from "@/public/engineering/landing/judges/Ashish_Dibouliya.webp";
+import SancheeKaushik from "@/public/engineering/landing/judges/Sanchee_Kaushik.webp";
+import SandeepKhandelwal from "@/public/engineering/landing/judges/Sandeep_Khandelwal.webp";
 import NidhiSharma from "@/public/engineering/landing/judges/Nidhi_Sharma.webp";
 
 export interface Judge {
