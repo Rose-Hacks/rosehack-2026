@@ -7,7 +7,7 @@ const PreSponsors = () => {
       <Image
         src={preSponsorBranch}
         alt="Branch with hanging lantern"
-        className="justify-left m-0 h-[50vh] w-auto p-0"
+        className="justify-left m-0 h-[35vh] w-auto p-0 md:h-[50vh]"
       />
     </div>
   );
