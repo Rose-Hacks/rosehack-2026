@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import { useTime, motion, useTransform } from "motion/react";
 import Logo from "@/public/engineering/logo.svg";
 import Content from "./landing/content";
 
@@ -8,8 +10,28 @@ import treeBackground1 from "@/public/engineering/landing/tree_background1.svg";
 import treeBackground2 from "@/public/engineering/landing/tree_background2.svg";
 import light from "@/public/engineering/landing/light.svg";
 import path from "@/public/engineering/landing/path.svg";
+import SmallFairy from "@/public/engineering/landing/SmallFairy.svg";
+import LargeFairy from "@/public/engineering/landing/LargeFairy.svg";
 
 const Landing = () => {
+  const time = useTime();
+  const smallFairyY = useTransform(
+    time,
+    (latest) => Math.sin(latest / 1000) * 6,
+  );
+  const smallFairyX = useTransform(
+    time,
+    (latest) => Math.sin(latest / 1200) * 3,
+  );
+
+  const largeFairyY = useTransform(
+    time,
+    (latest) => Math.sin((latest + 1500) / 1400) * 10,
+  );
+  const largeFairyX = useTransform(
+    time,
+    (latest) => Math.cos(latest / 1600) * 5,
+  );
   return (
     <div className="relative flex h-screen w-full flex-col items-center justify-center bg-gradient-to-b from-[#F77652] via-[#F55654] to-[#98436B]">
       <Image
@@ -38,6 +60,12 @@ const Landing = () => {
         alt="light"
         className="absolute -top-40 left-10 z-40 scale-[0.7]"
       />
+      <motion.div
+        className="absolute left-64 top-60 z-40 hidden sm:block"
+        style={{ y: smallFairyY, x: smallFairyX }}
+      >
+        <Image src={SmallFairy} alt="Small Fairy" />
+      </motion.div>
       <div className="absolute z-40 flex w-fit flex-col items-center justify-center gap-4 md:w-full">
         <Image src={Logo} alt="Rose Hack Logo" className="w-1/5 sm:w-1/12" />
         <Content />
@@ -55,8 +83,14 @@ const Landing = () => {
       <Image
         src={light}
         alt="light"
-        className="absolute -bottom-5 right-20 z-20 hidden scale-[0.7] sm:block"
+        className="absolute -bottom-5 right-20 z-40 hidden scale-[0.7] sm:block"
       />
+      <motion.div
+        className="absolute bottom-32 right-72 z-20 hidden pb-24 sm:block"
+        style={{ y: largeFairyY, x: largeFairyX }}
+      >
+        <Image src={LargeFairy} alt="Large Fairy" />
+      </motion.div>
       <Image
         src={tree2}
         alt="tree"

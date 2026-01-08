@@ -1,11 +1,34 @@
+"use client";
 import Image from "next/image";
+import { useTime, motion, useTransform } from "motion/react";
 import FooterAsset from "@/public/engineering/landing/footer_asset.svg";
 import MinimalLogo from "@/public/engineering/minimal_logo.svg";
+import light from "@/public/engineering/landing/light.svg";
+import SmallFairy from "@/public/engineering/landing/SmallFairy.svg";
+import LargeFairy from "@/public/engineering/landing/LargeFairy.svg";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import Link from "next/link";
 
 const Footer = () => {
+  const time = useTime();
+  const smallFairyY = useTransform(
+    time,
+    (latest) => Math.sin(latest / 1000) * 6,
+  );
+  const smallFairyX = useTransform(
+    time,
+    (latest) => Math.sin(latest / 1200) * 3,
+  );
+
+  const largeFairyY = useTransform(
+    time,
+    (latest) => Math.sin((latest + 1500) / 1400) * 10,
+  );
+  const largeFairyX = useTransform(
+    time,
+    (latest) => Math.cos(latest / 1600) * 5,
+  );
   return (
     <div
       className="relative w-full"
@@ -13,12 +36,41 @@ const Footer = () => {
         background: "linear-gradient(to bottom, #C6517F 0%, #98436B 100%)",
       }}
     >
+      <Image src={light} alt="light" className="absolute z-50 scale-95" />
+      <Image
+        src={light}
+        alt="light"
+        className="absolute right-24 top-48 z-50 scale-[0.7]"
+      />
+      <Image
+        src={light}
+        alt="light"
+        className="absolute left-48 top-60 z-50 scale-[0.7]"
+      />
+      <motion.div
+        className="absolute left-96 top-60 z-40 hidden sm:block"
+        style={{ y: largeFairyY, x: largeFairyX }}
+      >
+        <Image src={LargeFairy} alt="Small Fairy" />
+      </motion.div>
+      <motion.div
+        className="absolute bottom-80 left-80 z-40 hidden sm:block"
+        style={{ y: smallFairyY, x: smallFairyX }}
+      >
+        <Image src={SmallFairy} alt="Small Fairy" />
+      </motion.div>
+      <motion.div
+        className="absolute bottom-80 left-80 z-40 hidden sm:block"
+        style={{ y: smallFairyY, x: smallFairyX }}
+      >
+        <Image src={SmallFairy} alt="Small Fairy" />
+      </motion.div>
       <Image
         src={FooterAsset}
         className="w-full"
         alt="pond, plants, and deer on the rosehack footer!"
       />
-      <div className="absolute inset-x-0 bottom-10 z-50 flex flex-col items-center gap-2 text-white md:gap-5">
+      <div className="absolute inset-x-0 bottom-10 z-40 flex flex-col items-center gap-2 text-white md:gap-5">
         <Image
           src={MinimalLogo}
           alt="minimal rosehack logo"
