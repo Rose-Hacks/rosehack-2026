@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Title from "@/components/ui/title";
+import Flower from "@/public/engineering/landing/flower.svg";
 import Member from "./member";
 import Teams from "@/data/team";
 
@@ -17,6 +19,12 @@ const Team = () => {
             <Member name={name} role={role} image={image} />
           </div>
         ))}
+        <Image
+          src={Flower}
+          alt="Yellow and purple flower"
+          className="absolute -right-96 scale-[0.8]"
+        />
+        <div></div>
       </div>
     </div>
   );

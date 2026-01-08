@@ -36,22 +36,37 @@ const Footer = () => {
         background: "linear-gradient(to bottom, #C6517F 0%, #98436B 100%)",
       }}
     >
-      <Image src={light} alt="light" className="absolute z-50 scale-95" />
       <Image
         src={light}
         alt="light"
-        className="absolute right-24 top-48 z-50 scale-[0.7]"
+        className="absolute z-50 hidden scale-95 sm:block"
       />
       <Image
         src={light}
         alt="light"
-        className="absolute left-48 top-60 z-50 scale-[0.7]"
+        className="absolute right-24 top-48 z-30 hidden scale-[0.7] sm:block"
+      />
+      <Image
+        src={light}
+        alt="light"
+        className="absolute left-48 top-60 z-30 hidden scale-[0.7] md:block"
+      />
+      <Image
+        src={light}
+        alt="light"
+        className="absolute bottom-96 right-20 z-30 hidden scale-[0.7] sm:block"
       />
       <motion.div
-        className="absolute left-96 top-60 z-40 hidden sm:block"
+        className="absolute left-96 top-40 z-40 hidden md:block"
         style={{ y: largeFairyY, x: largeFairyX }}
       >
         <Image src={LargeFairy} alt="Small Fairy" />
+      </motion.div>
+      <motion.div
+        className="absolute right-32 top-80 z-40 hidden sm:block"
+        style={{ y: smallFairyY, x: smallFairyX }}
+      >
+        <Image src={SmallFairy} alt="Small Fairy" />
       </motion.div>
       <motion.div
         className="absolute bottom-80 left-80 z-40 hidden sm:block"
@@ -60,7 +75,13 @@ const Footer = () => {
         <Image src={SmallFairy} alt="Small Fairy" />
       </motion.div>
       <motion.div
-        className="absolute bottom-80 left-80 z-40 hidden sm:block"
+        className="absolute left-12 top-80 z-40 hidden sm:block"
+        style={{ y: smallFairyY, x: smallFairyX }}
+      >
+        <Image src={SmallFairy} alt="Small Fairy" />
+      </motion.div>
+      <motion.div
+        className="absolute bottom-80 left-80 z-40 hidden"
         style={{ y: smallFairyY, x: smallFairyX }}
       >
         <Image src={SmallFairy} alt="Small Fairy" />

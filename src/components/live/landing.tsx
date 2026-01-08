@@ -61,7 +61,7 @@ const Landing = () => {
         className="absolute -top-40 left-10 z-40 scale-[0.7]"
       />
       <motion.div
-        className="absolute left-64 top-60 z-40 hidden sm:block"
+        className="absolute left-64 top-60 z-10 hidden sm:block"
         style={{ y: smallFairyY, x: smallFairyX }}
       >
         <Image src={SmallFairy} alt="Small Fairy" />
@@ -86,7 +86,7 @@ const Landing = () => {
         className="absolute -bottom-5 right-20 z-40 hidden scale-[0.7] sm:block"
       />
       <motion.div
-        className="absolute bottom-32 right-72 z-20 hidden pb-24 sm:block"
+        className="absolute bottom-32 right-72 z-30 hidden pb-24 sm:block"
         style={{ y: largeFairyY, x: largeFairyX }}
       >
         <Image src={LargeFairy} alt="Large Fairy" />
