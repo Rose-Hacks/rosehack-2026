@@ -10,6 +10,8 @@ import AshishDibouliya from "@/public/engineering/landing/judges/Ashish_Dibouliy
 import SancheeKaushik from "@/public/engineering/landing/judges/Sanchee_Kaushik.webp";
 import SandeepKhandelwal from "@/public/engineering/landing/judges/Sandeep_Khandelwal.webp";
 import NidhiSharma from "@/public/engineering/landing/judges/Nidhi_Sharma.webp";
+import JeremyWooSam from "@/public/engineering/landing/judges/Jeremy_Woo-Sam.webp";
+import VinzMadrigal from "@/public/engineering/landing/judges/Vinz_Madrigal.webp";
 
 export interface Judge {
   name: string;
@@ -67,6 +69,16 @@ const Judges: Judge[] = [
     name: "Ashish Dibouliya",
     image: AshishDibouliya,
     role: "Managing Director of Data Architecture @ Webster Bank",
+  },
+  {
+    name: "Jeremy Woo-Sam",
+    image: JeremyWooSam,
+    role: "Program Manager @ EFG",
+  },
+  {
+    name: "Vinz Madrigal",
+    image: VinzMadrigal,
+    role: "SWE @ EFG",
   },
 ];
 
