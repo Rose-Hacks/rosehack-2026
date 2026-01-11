@@ -17,7 +17,7 @@ import AnujaDawane from "@/public/engineering/landing/judges/Anuja_Dawane.webp";
 import DebbieMorford from "@/public/engineering/landing/judges/Debbie_Morford.webp";
 import KarthikBodducherla from "@/public/engineering/landing/judges/Karthik_Bodducherla.webp";
 import PallaviSaitu from "@/public/engineering/landing/judges/Pallavi_Saitu.webp";
-import SofiaDelaMoraTostado from "@/public/engineering/landing/judges/webp Tostado.webp";
+import SofiaDelaMoraTostado from "@/public/engineering/landing/judges/Sofia_De_la_Mora_Tostado.jpeg";
 import SwetaMulji from "@/public/engineering/landing/judges/Sweta_Mulji.webp";
 import VijayasaiMunduru from "@/public/engineering/landing/judges/Vijaya_sai_Munduru.webp";
 import ZeynepYorulmaz from "@/public/engineering/landing/judges/Zeynep_Yorulmaz.webp";
