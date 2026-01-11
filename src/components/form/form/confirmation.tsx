@@ -12,8 +12,11 @@ const Confirmation = ({ judge }: ConfirmationProps) => {
       <Confetti height={height} width={width} />
       <p className="text-white">
         Thank you for filling out the form. Please{" "}
-        <span className="font-bold">check your email for confirmation</span> and
-        for updates soon.
+        <span className="font-bold">
+          check your email for confirmation, if you do not recieve an email
+          within 15 minutes of submitting your application, please contact us at
+          rosehackucr@gmail.com
+        </span>
       </p>
       {judge && (
         <p className="text-white">
