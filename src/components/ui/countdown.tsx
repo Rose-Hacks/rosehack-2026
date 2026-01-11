@@ -29,7 +29,7 @@ const Digits = ({ value, unit, classNames }: digitProps) => {
             </div>
           ))}
       </div>
-      <div className={`m-2 mt-0 text-xs ${classNames.unit}`}>{unit}</div>
+      <div className={`m-2 mt-0 text-base ${classNames.unit}`}>{unit}</div>
     </div>
   );
 };
