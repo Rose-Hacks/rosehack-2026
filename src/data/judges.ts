@@ -12,6 +12,15 @@ import SandeepKhandelwal from "@/public/engineering/landing/judges/Sandeep_Khand
 import NidhiSharma from "@/public/engineering/landing/judges/Nidhi_Sharma.webp";
 import JeremyWooSam from "@/public/engineering/landing/judges/Jeremy_Woo-Sam.webp";
 import VinzMadrigal from "@/public/engineering/landing/judges/Vinz_Madrigal.webp";
+import AnoushkaMergoju from "@/public/engineering/landing/judges/Anoushka_Mergoju.webp";
+import AnujaDawane from "@/public/engineering/landing/judges/Anuja_Dawane.webp";
+import DebbieMorford from "@/public/engineering/landing/judges/Debbie_Morford.webp";
+import KarthikBodducherla from "@/public/engineering/landing/judges/Karthik_Bodducherla.webp";
+import PallaviSaitu from "@/public/engineering/landing/judges/Pallavi_Saitu.webp";
+import SofiaDelaMoraTostado from "@/public/engineering/landing/judges/Sofia_De_la_Mora_Tostado.jpeg";
+import SwetaMulji from "@/public/engineering/landing/judges/Sweta_Mulji.webp";
+import VijayasaiMunduru from "@/public/engineering/landing/judges/Vijaya_sai_Munduru.webp";
+import ZeynepYorulmaz from "@/public/engineering/landing/judges/Zeynep_Yorulmaz.webp";
 
 export interface Judge {
   name: string;
@@ -79,6 +88,51 @@ const Judges: Judge[] = [
     name: "Vinz Madrigal",
     image: VinzMadrigal,
     role: "SWE @ EFG",
+  },
+  {
+    name: "Sofia De la Mora Tostado",
+    image: SofiaDelaMoraTostado,
+    role: "CTO @ Intelital",
+  },
+  {
+    name: "Pallavi Saitu",
+    image: PallaviSaitu,
+    role: "Senior Data Analyst @ Myvest",
+  },
+  {
+    name: "Anoushka Mergoju",
+    image: AnoushkaMergoju,
+    role: "Software Development Engineer @ Amazon Prime Air",
+  },
+  {
+    name: "Debbie	Morford",
+    image: DebbieMorford,
+    role: "Retired Computer Scientist	@ Lawrence Livermore National Laboratory",
+  },
+  {
+    name: "Sweta Mulji",
+    image: SwetaMulji,
+    role: "Co-founder and Chief Customer Officer @ SalesPlay X",
+  },
+  {
+    name: "Zeynep	Yorulmaz",
+    image: ZeynepYorulmaz,
+    role: "Co-founder & CEO @ Mindra",
+  },
+  {
+    name: "Karthik Bodducherla",
+    image: KarthikBodducherla,
+    role: "Director and Application Development @ IQVIA",
+  },
+  {
+    name: "Vijaya sai	Munduru",
+    image: VijayasaiMunduru,
+    role: "Lead Member of Technical Staff	@ Salesforce",
+  },
+  {
+    name: "Anuja	Dawane",
+    image: AnujaDawane,
+    role: "Senior Software Engineer	@ Amazon Lab126",
   },
 ];
 
