@@ -1,6 +1,6 @@
 "use client";
 
-import LOGO from "@/app/favicon.ico";
+import LOGO from "@/public/engineering/minimal_logo.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { TABS } from "@/data/navigation";
@@ -34,11 +34,11 @@ const Navigation = () => {
   const { open, toggleSidebar } = useSidebar();
 
   return (
-    <Sidebar collapsible="icon" className="text-white">
+    <Sidebar collapsible="icon" className="font-rosehack-alt text-white">
       <SidebarHeader className={`${open ? "py-8" : "py-4"}`}>
         <Image
           src={LOGO}
-          className="mx-auto h-12 w-12"
+          className="mx-auto h-20 w-20"
           alt={`${data.name} Logo`}
         />
       </SidebarHeader>
@@ -51,7 +51,10 @@ const Navigation = () => {
           >
             <SidebarGroup className="pt-0">
               {open && (
-                <SidebarGroupLabel asChild className="pt-0 text-xl font-bold">
+                <SidebarGroupLabel
+                  asChild
+                  className="pt-0 text-xl font-semibold"
+                >
                   <CollapsibleTrigger className="text-white">
                     {title}
                     <ChevronDown className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180" />
@@ -67,7 +70,7 @@ const Navigation = () => {
                           <Link key={index} href={link} target={target}>
                             <SidebarMenuItem
                               key={index}
-                              className={`flex h-6 items-center pl-3 text-lg ${link === pathname && "bg-hackathon-blue-100"} rounded`}
+                              className={`flex h-6 items-center pl-3 text-lg ${link === pathname && "bg-rosehack-pinkbrown"} rounded`}
                             >
                               <span className={`${!open && "mx-auto"}`}>
                                 {icon}
