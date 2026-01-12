@@ -10,7 +10,7 @@ import { RULES } from "@/data/user/rules";
 
 const DashboardWrapper = async () => {
   return (
-    <div className="font-poppins flex h-full flex-col gap-3 py-4">
+    <div className="font-poppins flex h-full flex-col gap-3 p-4">
       <Header />
       <div className="grid grid-cols-1 gap-3 lg:grid-cols-3">
         <div className="col-span-1 flex flex-col gap-3 md:col-span-2">
@@ -18,12 +18,12 @@ const DashboardWrapper = async () => {
           <div className="flex flex-col gap-4 md:flex-row">
             <Tile
               icon={<QrCode size={40} />}
-              text="Check In"
+              text="CHECK IN"
               link="/user/checkin"
             />
             <Tile
               icon={<ParkingCircle size={40} />}
-              text="Parking Info"
+              text="PARKING INFO"
               link="https://transportation.ucr.edu/visitor-parking"
             />
           </div>
@@ -32,8 +32,8 @@ const DashboardWrapper = async () => {
         </div>
 
         <div className="flex flex-col gap-4">
-          <BulletList text="Rules" list={RULES} />
-          <BulletList text="Judging" list={JUDGING} />
+          <BulletList text="RULES" list={RULES} />
+          <BulletList text="JUDGING" list={JUDGING} />
         </div>
       </div>
     </div>

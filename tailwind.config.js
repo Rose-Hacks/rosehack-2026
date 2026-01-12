@@ -68,6 +68,8 @@ module.exports = {
         },
         rosehack: {
           yellow: "#FFD68C",
+          brown: "#522E22",
+          pinkbrown: "#AA4766",
         },
         sidebar: {
           DEFAULT: "#22577A",
