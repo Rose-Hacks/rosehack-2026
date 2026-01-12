@@ -49,6 +49,11 @@ export const mappings = {
     text: "",
     hover: "",
   },
+  pinkbrown: {
+    background: "bg-rosehack-pinkbrown",
+    text: "text-white",
+    hover: "",
+  },
 };
 
 export const COLORS = {
@@ -116,4 +121,5 @@ export const COLORS = {
   "3/5": mappings["green"],
   "4/5": mappings["green"],
   "5/5": mappings["purple"],
+  pinkbrown: mappings["pinkbrown"],
 };

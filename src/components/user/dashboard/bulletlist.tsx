@@ -5,7 +5,7 @@ interface props {
 
 const BulletList = ({ text, list }: props) => {
   return (
-    <div className="w-full rounded-xl bg-white p-4 drop-shadow-md">
+    <div className="w-full rounded-xl bg-rosehack-yellow p-4 font-rosehack-alt text-rosehack-brown">
       <div className="flex items-center justify-between text-xl font-bold">
         {text}
       </div>
