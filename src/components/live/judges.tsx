@@ -5,11 +5,24 @@ import plant from "@/public/engineering/landing/plant.svg";
 import Title from "@/components/ui/title";
 import Member from "./member";
 import JudgeNames from "@/data/judges";
+import NidhiSharma from "@/public/engineering/landing/judges/Nidhi_Sharma.webp";
 
 const Judges = () => {
   return (
     <div className="relative bg-[#F46055]">
       <div className="relative bg-gradient-to-b from-[#41675c] to-[#415237] pb-16 md:pb-24">
+        <div className="relative flex justify-center pt-8">
+          <Title>Keynote Speaker</Title>
+        </div>
+        <div className="z-20 mx-8 flex flex-row flex-wrap justify-center">
+          <div className="relative z-20 m-2 mx-8 flex w-5/12 flex-col px-4 lg:w-1/5">
+            <Member
+              name="Nidhi Sharma"
+              image={NidhiSharma}
+              role="Senior Software Engineering Leader @ Cox Automotive"
+            />
+          </div>
+        </div>
         <div className="relative flex justify-center pt-8">
           <Title>Judges</Title>
         </div>

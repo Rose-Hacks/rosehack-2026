@@ -8,6 +8,7 @@ import Winc from "@/public/engineering/landing/sponsors/winc.webp";
 import CodeRabbit from "@/public/engineering/landing/sponsors/codeRabbit.webp";
 import Unibee from "@/public/engineering/landing/sponsors/unibee.webp";
 import Wolfram from "@/public/engineering/landing/sponsors/wolfram.webp";
+import SchoolOfBusiness from "@/public/engineering/landing/sponsors/schoolOfBusiness.webp";
 
 export interface Sponsor {
   name: string;
@@ -26,6 +27,10 @@ const Sponsors: Sponsor[] = [
   {
     name: "EFG",
     image: Efg,
+  },
+  {
+    name: "UCR School of Business",
+    image: SchoolOfBusiness,
   },
   {
     name: "3DCONNEXION",

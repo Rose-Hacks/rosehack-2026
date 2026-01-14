@@ -9,7 +9,6 @@ import RobinWang from "@/public/engineering/landing/judges/Robin_Wang.webp";
 import AshishDibouliya from "@/public/engineering/landing/judges/Ashish_Dibouliya.webp";
 import SancheeKaushik from "@/public/engineering/landing/judges/Sanchee_Kaushik.webp";
 import SandeepKhandelwal from "@/public/engineering/landing/judges/Sandeep_Khandelwal.webp";
-import NidhiSharma from "@/public/engineering/landing/judges/Nidhi_Sharma.webp";
 import JeremyWooSam from "@/public/engineering/landing/judges/Jeremy_Woo-Sam.webp";
 import VinzMadrigal from "@/public/engineering/landing/judges/Vinz_Madrigal.webp";
 import AnoushkaMergoju from "@/public/engineering/landing/judges/Anoushka_Mergoju.webp";
@@ -29,11 +28,6 @@ export interface Judge {
 }
 
 const Judges: Judge[] = [
-  {
-    name: "Nidhi Sharma",
-    image: NidhiSharma,
-    role: "Senior Software Engineering Leader @ Cox Automotive",
-  },
   {
     name: "Sandeep Khandelwal",
     image: SandeepKhandelwal,
