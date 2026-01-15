@@ -19,10 +19,10 @@ const Schedule = async () => {
   ];
 
   return (
-    <>
+    <div className="flex w-full flex-col items-center space-y-5 bg-[#F46055]">
       <Title>Schedule</Title>
       <Events events={items} totalDays={totalDays} />
-    </>
+    </div>
   );
 };
 
