@@ -26,7 +26,7 @@ const Events = ({ events, totalDays }: props) => {
             className={`flex justify-center rounded p-2 text-white focus:outline-none ${
               selectedDay === day
                 ? "bg-[#4E2F19]"
-                : "bg-gradient-to-b from-[#A8734D] to-[#715643]"
+                : "bg-gradient-to-br from-[#A8734D] to-[#715643]"
             }`}
             onClick={() => setSelectedDay(day)}
           >
@@ -58,7 +58,7 @@ const Events = ({ events, totalDays }: props) => {
               .map(({ start, summary, location }, index) => (
                 <div
                   key={index}
-                  className="m-2 grid w-full grid-cols-2 items-center justify-center rounded bg-gradient-to-b from-[#A8734D] to-[#715643] px-4 py-3 text-base md:text-xl"
+                  className="m-2 grid w-full grid-cols-2 items-center justify-center rounded bg-gradient-to-br from-[#A8734D] to-[#715643] px-4 py-3 text-base md:text-xl"
                 >
                   <p className="justify-left flex w-full md:justify-center">
                     {summary}

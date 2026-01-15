@@ -51,7 +51,7 @@ const Schedule = ({ eventList }: props) => {
             currentDate.setDate(currentDate.getDate() + index);
             return (
               <div
-                className="m-5 ml-0 flex flex-grow items-center justify-start font-rosehack-alt text-sm font-light text-white md:text-lg"
+                className="m-5 ml-0 flex flex-grow items-center justify-start font-rosehack-alt text-sm font-light text-white md:text-lg "
                 key={index}
               >
                 {day} -{" "}
@@ -64,7 +64,7 @@ const Schedule = ({ eventList }: props) => {
           })}
         </div>
       </div>
-      <div className="flex bg-[#F55654]">
+      <div className="flex bg-[#F55654] overflow-scroll">
         {days.map((day, dayIndex) => (
           <div
             key={dayIndex}
