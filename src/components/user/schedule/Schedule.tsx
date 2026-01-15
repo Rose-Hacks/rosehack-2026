@@ -40,8 +40,8 @@ const Schedule = ({ eventList }: props) => {
 
   return (
     <>
-      <div className="sticky top-0 z-10 flex w-full flex-col bg-gray-100 pt-4">
-        <Label className="flex gap-3 py-4 pr-5 text-2xl font-bold">
+      <div className="sticky top-0 z-10 flex w-full flex-col bg-gradient-to-b from-[#F77652] to-[#F55654] pl-4 pt-4">
+        <Label className="flex gap-3 py-4 pr-5 font-rosehack-main text-2xl font-bold text-white">
           Schedule
         </Label>
         <Toolbar onFilterChange={filterChange} />
@@ -51,7 +51,7 @@ const Schedule = ({ eventList }: props) => {
             currentDate.setDate(currentDate.getDate() + index);
             return (
               <div
-                className="font-montserrat m-5 ml-0 flex flex-grow items-center justify-start border-b-[1px] border-black text-sm font-light text-black md:text-lg"
+                className="m-5 ml-0 flex flex-grow items-center justify-start font-rosehack-alt text-sm font-light text-white md:text-lg"
                 key={index}
               >
                 {day} -{" "}
@@ -64,7 +64,7 @@ const Schedule = ({ eventList }: props) => {
           })}
         </div>
       </div>
-      <div className="mr-4 flex">
+      <div className="flex bg-[#F55654]">
         {days.map((day, dayIndex) => (
           <div
             key={dayIndex}

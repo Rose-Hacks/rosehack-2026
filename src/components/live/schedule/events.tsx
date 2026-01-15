@@ -18,8 +18,8 @@ const Events = ({ events, totalDays }: props) => {
   );
 
   return (
-    <div className="flex flex-col items-center justify-center w-full">
-      <div className="mx-auto grid w-11/12 md:w-10/12 grid-cols-4 md:grid-cols-7 items-center justify-between space-x-0 md:space-x-5 rounded font-rosehack-alt text-xs md:text-base">
+    <div className="flex w-full flex-col items-center justify-center">
+      <div className="mx-auto grid w-11/12 grid-cols-4 items-center justify-between space-x-0 rounded font-rosehack-alt text-xs md:w-10/12 md:grid-cols-7 md:space-x-5 md:text-base">
         {totalDays.map((day) => (
           <button
             key={day}
@@ -58,9 +58,11 @@ const Events = ({ events, totalDays }: props) => {
               .map(({ start, summary, location }, index) => (
                 <div
                   key={index}
-                  className=" m-2 grid w-full grid-cols-2 items-center justify-center rounded bg-gradient-to-b from-[#A8734D] to-[#715643] px-4 py-3 text-base md:text-xl"
+                  className="m-2 grid w-full grid-cols-2 items-center justify-center rounded bg-gradient-to-b from-[#A8734D] to-[#715643] px-4 py-3 text-base md:text-xl"
                 >
-                  <p className="flex w-full justify-left md:justify-center">{summary}</p>
+                  <p className="justify-left flex w-full md:justify-center">
+                    {summary}
+                  </p>
                   {/* <p className="flex justify-center">
                     {description.split("\n")[0].slice(1)}
                   </p> */}
