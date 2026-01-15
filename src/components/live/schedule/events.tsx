@@ -18,8 +18,8 @@ const Events = ({ events, totalDays }: props) => {
   );
 
   return (
-    <div className="flex flex-col items-center justify-center">
-      <div className="mx-auto grid w-full grid-cols-7 items-center justify-between space-x-5 rounded font-rosehack-alt text-base">
+    <div className="flex flex-col items-center justify-center w-full">
+      <div className="mx-auto grid w-11/12 md:w-10/12 grid-cols-4 md:grid-cols-7 items-center justify-between space-x-0 md:space-x-5 rounded font-rosehack-alt text-xs md:text-base">
         {totalDays.map((day) => (
           <button
             key={day}
@@ -34,7 +34,7 @@ const Events = ({ events, totalDays }: props) => {
           </button>
         ))}
       </div>
-      <div className="mt-6 h-full w-full font-rosehack-alt text-white">
+      <div className="mt-6 h-full w-10/12 font-rosehack-alt text-white">
         {events.filter(
           ({ start }) =>
             new Date(start.dateTime).toLocaleString("en-US", {
@@ -58,14 +58,15 @@ const Events = ({ events, totalDays }: props) => {
               .map(({ start, summary, location }, index) => (
                 <div
                   key={index}
-                  className="font-workSans m-2 grid w-full grid-cols-3 items-center justify-center rounded bg-gradient-to-b from-[#A8734D] to-[#715643] px-4 py-3 text-lg font-semibold"
+                  className=" m-2 grid w-full grid-cols-2 items-center justify-center rounded bg-gradient-to-b from-[#A8734D] to-[#715643] px-4 py-3 text-base md:text-xl"
                 >
-                  <p className="flex w-full justify-center">{summary}</p>
+                  <p className="flex w-full justify-left md:justify-center">{summary}</p>
                   {/* <p className="flex justify-center">
                     {description.split("\n")[0].slice(1)}
                   </p> */}
-                  <p className="flex justify-center">{location}</p>
-                  <p>
+                  {/* <p className="flex justify-center">{location}</p> */}
+                  <p className="flex justify-center">
+                    {location} {" @ "}
                     {new Date(new Date(start.dateTime)).toLocaleTimeString(
                       "en-US",
                       {
