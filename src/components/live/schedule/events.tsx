@@ -9,7 +9,7 @@ interface props {
 
 const Events = ({ events, totalDays }: props) => {
   const [selectedDay, setSelectedDay] = useState(
-    new Date() > new Date(events[0].start.dateTime)
+    events.length > 0 && new Date() > new Date(events[0].start.dateTime)
       ? new Date().toLocaleString("en-US", {
           timeZone: "America/Los_Angeles",
           weekday: "long",
@@ -19,11 +19,11 @@ const Events = ({ events, totalDays }: props) => {
 
   return (
     <div className="flex w-full flex-col items-center justify-center">
-      <div className="mx-auto grid w-11/12 grid-cols-4 items-center justify-between space-x-0 rounded font-rosehack-alt text-xs md:w-10/12 md:grid-cols-7 md:space-x-5 md:text-base">
+      <div className="mx-auto flex w-11/12 flex-wrap items-center justify-center rounded font-rosehack-alt text-xs md:w-10/12 md:grid-cols-7 md:text-base">
         {totalDays.map((day) => (
           <button
             key={day}
-            className={`flex justify-center rounded p-2 text-white focus:outline-none ${
+            className={`m-4 flex w-1/4 justify-center rounded p-2 text-white focus:outline-none md:w-auto ${
               selectedDay === day
                 ? "bg-[#4E2F19]"
                 : "bg-gradient-to-br from-[#A8734D] to-[#715643]"
