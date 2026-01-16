@@ -1,7 +1,7 @@
 // import { SparklesCore } from "@/components/ui/shadcn-io/sparkles";
 import Landing from "./landing";
 import About from "./about";
-// import Schedule from "./schedule";
+import Schedule from "./schedule";
 import Tracks from "./tracks";
 import PreSponsors from "./preSponsors";
 import Sponsors from "./sponsors";
@@ -28,7 +28,7 @@ const Live = () => {
       </div>
       <About />
       <Tracks />
-      {/* <Schedule /> */}
+      <Schedule />
       <PreSponsors />
       <Sponsors />
       {/* <Committees /> */}

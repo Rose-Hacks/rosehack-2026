@@ -8,8 +8,8 @@ const Toolbar = ({ onFilterChange }: props) => {
   const [selected, setSelected] = useState("all");
 
   return (
-    <div className="flex items-center justify-end">
-      <div className="flex rounded border-2 bg-white">
+    <div className="flex items-center justify-end pr-4 font-rosehack-main">
+      <div className="flex rounded bg-rosehack-yellow p-1">
         <button
           onClick={() => {
             setSelected("all");
@@ -17,8 +17,8 @@ const Toolbar = ({ onFilterChange }: props) => {
           }}
           className={`m-0.5 px-3 py-1 ${
             selected === "all"
-              ? "rounded bg-hackathon-green-300 text-white"
-              : "bg-white text-black"
+              ? "rounded bg-rosehack-pinkbrown text-white"
+              : "bg-rosehack-yellow text-rosehack-brown"
           }`}
         >
           All Events
@@ -30,8 +30,8 @@ const Toolbar = ({ onFilterChange }: props) => {
           }}
           className={`m-0.5 px-3 py-1 ${
             selected === "hackweek"
-              ? "rounded bg-hackathon-green-300 text-white"
-              : "bg-white text-black"
+              ? "rounded bg-rosehack-pinkbrown text-white"
+              : "bg-rosehack-yellow text-rosehack-brown"
           }`}
         >
           HackWeek
@@ -43,8 +43,8 @@ const Toolbar = ({ onFilterChange }: props) => {
           }}
           className={`m-0.5 px-3 py-1 ${
             selected === "hackathon"
-              ? "rounded bg-hackathon-green-300 text-white"
-              : "bg-white text-black"
+              ? "rounded bg-rosehack-pinkbrown text-white"
+              : "bg-rosehack-yellow text-rosehack-brown"
           }`}
         >
           Hackathon

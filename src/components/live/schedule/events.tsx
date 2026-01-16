@@ -9,7 +9,7 @@ interface props {
 
 const Events = ({ events, totalDays }: props) => {
   const [selectedDay, setSelectedDay] = useState(
-    new Date() > new Date(events[0].start.dateTime)
+    events.length > 0 && new Date() > new Date(events[0].start.dateTime)
       ? new Date().toLocaleString("en-US", {
           timeZone: "America/Los_Angeles",
           weekday: "long",
@@ -18,13 +18,15 @@ const Events = ({ events, totalDays }: props) => {
   );
 
   return (
-    <div className="flex flex-col items-center justify-center">
-      <div className="mx-auto grid w-10/12 grid-cols-7 items-center justify-between rounded border-2 border-black text-base">
+    <div className="flex w-full flex-col items-center justify-center">
+      <div className="mx-auto flex w-11/12 flex-wrap items-center justify-center rounded font-rosehack-alt text-xs md:w-10/12 md:grid-cols-7 md:text-base">
         {totalDays.map((day) => (
           <button
             key={day}
-            className={`flex justify-center rounded p-2 text-black focus:outline-none ${
-              selectedDay === day ? "bg-hackathon-blue-100" : "bg-transparent"
+            className={`m-4 flex w-1/4 justify-center rounded p-2 text-white focus:outline-none md:w-auto ${
+              selectedDay === day
+                ? "bg-[#4E2F19]"
+                : "bg-gradient-to-br from-[#A8734D] to-[#715643]"
             }`}
             onClick={() => setSelectedDay(day)}
           >
@@ -32,7 +34,7 @@ const Events = ({ events, totalDays }: props) => {
           </button>
         ))}
       </div>
-      <div className="mt-6 h-full w-10/12">
+      <div className="mt-6 h-full w-10/12 font-rosehack-alt text-white">
         {events.filter(
           ({ start }) =>
             new Date(start.dateTime).toLocaleString("en-US", {
@@ -53,12 +55,20 @@ const Events = ({ events, totalDays }: props) => {
                     weekday: "long",
                   }) === selectedDay,
               )
-              .map(({ start, summary, description, location }, index) => (
+              .map(({ start, summary, location }, index) => (
                 <div
                   key={index}
-                  className="font-workSans grid w-full grid-cols-4 items-center justify-center px-4 py-3 text-lg font-semibold"
+                  className="m-2 grid w-full grid-cols-2 items-center justify-center rounded bg-gradient-to-br from-[#A8734D] to-[#715643] px-4 py-3 text-base md:text-xl"
                 >
-                  <p>
+                  <p className="justify-left flex w-full md:justify-center">
+                    {summary}
+                  </p>
+                  {/* <p className="flex justify-center">
+                    {description.split("\n")[0].slice(1)}
+                  </p> */}
+                  {/* <p className="flex justify-center">{location}</p> */}
+                  <p className="flex justify-center">
+                    {location} {" @ "}
                     {new Date(new Date(start.dateTime)).toLocaleTimeString(
                       "en-US",
                       {
@@ -68,11 +78,6 @@ const Events = ({ events, totalDays }: props) => {
                       },
                     )}
                   </p>
-                  <p className="flex w-full justify-center">{summary}</p>
-                  <p className="flex justify-center">
-                    {description.split("\n")[0].slice(1)}
-                  </p>
-                  <p className="flex justify-center">{location}</p>
                 </div>
               ))}
           </>
