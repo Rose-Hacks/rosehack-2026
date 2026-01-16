@@ -61,7 +61,7 @@ const Event = ({ event }: props) => {
             </p>
           </DialogTitle>
           <DialogDescription>
-            {event.description.split("\n")[1]}
+            {event.description?.split("\n")[1] || "No description available"}
           </DialogDescription>
         </DialogHeader>
       </DialogContent>
