@@ -9,7 +9,7 @@ import NidhiSharma from "@/public/engineering/landing/judges/Nidhi_Sharma.webp";
 
 const Judges = () => {
   return (
-    <div className="relative bg-[#F46055]">
+    <div className="relative bg-[#F46055] xl:pb-12">
       <div className="relative bg-gradient-to-b from-[#41675c] to-[#415237] pb-16 md:pb-24">
         <div className="relative flex justify-center pt-8">
           <Title>Keynote Speaker</Title>

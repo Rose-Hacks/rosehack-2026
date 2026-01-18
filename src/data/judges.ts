@@ -7,7 +7,6 @@ import JoshuaCandelaria from "@/public/engineering/landing/judges/Joshua_Candela
 import RamakantSamal from "@/public/engineering/landing/judges/Ramakant_Samal.webp";
 import RobinWang from "@/public/engineering/landing/judges/Robin_Wang.webp";
 import AshishDibouliya from "@/public/engineering/landing/judges/Ashish_Dibouliya.webp";
-import SancheeKaushik from "@/public/engineering/landing/judges/Sanchee_Kaushik.webp";
 import SandeepKhandelwal from "@/public/engineering/landing/judges/Sandeep_Khandelwal.webp";
 import JeremyWooSam from "@/public/engineering/landing/judges/Jeremy_Woo-Sam.webp";
 import VinzMadrigal from "@/public/engineering/landing/judges/Vinz_Madrigal.webp";
@@ -20,6 +19,9 @@ import SofiaDelaMoraTostado from "@/public/engineering/landing/judges/Sofia_De_l
 import SwetaMulji from "@/public/engineering/landing/judges/Sweta_Mulji.webp";
 import VijayasaiMunduru from "@/public/engineering/landing/judges/Vijaya_sai_Munduru.webp";
 import ZeynepYorulmaz from "@/public/engineering/landing/judges/Zeynep_Yorulmaz.webp";
+import SitaramSrivatsavai from "@/public/engineering/landing/judges/Sitaram_Srivatsavai.jpeg";
+import SravanKumarArava from "@/public/engineering/landing/judges/SravanKumar_Arava.jpeg";
+import SivakumarDhanasekar from "@/public/engineering/landing/judges/Sivakumar_Dhanasekar.jpeg";
 
 export interface Judge {
   name: string;
@@ -52,12 +54,6 @@ const Judges: Judge[] = [
     name: "Ashok Kumar",
     image: AshokKumar,
     role: "Tech Lead @ Walmart Global Tech",
-  },
-
-  {
-    name: "Sanchee Kaushik",
-    image: SancheeKaushik,
-    role: "Senior Data Engineer @ CVS Health",
   },
   {
     name: "Sweta Mulji",
@@ -130,6 +126,21 @@ const Judges: Judge[] = [
     name: "Vijaya sai	Munduru",
     image: VijayasaiMunduru,
     role: "Lead Member of Technical Staff	@ Salesforce",
+  },
+  {
+    name: "Sitaram Srivatsavai",
+    image: SitaramSrivatsavai,
+    role: "Senior Director of Software Development @ IQVIA",
+  },
+  {
+    name: "Sravan Kumar Arava",
+    image: SravanKumarArava,
+    role: "Manager of Data Integration @ Guitar Center",
+  },
+  {
+    name: "Sivakumar Dhanasekar",
+    image: SivakumarDhanasekar,
+    role: "Lead Software Engineer @ Equifax",
   },
 ];
 
