@@ -19,9 +19,9 @@ import SofiaDelaMoraTostado from "@/public/engineering/landing/judges/Sofia_De_l
 import SwetaMulji from "@/public/engineering/landing/judges/Sweta_Mulji.webp";
 import VijayasaiMunduru from "@/public/engineering/landing/judges/Vijaya_sai_Munduru.webp";
 import ZeynepYorulmaz from "@/public/engineering/landing/judges/Zeynep_Yorulmaz.webp";
-import SitaramSrivatsavai from "@/public/engineering/landing/judges/Sitaram_Srivatsavai.jpeg";
-import SravanKumarArava from "@/public/engineering/landing/judges/SravanKumar_Arava.jpeg";
-import SivakumarDhanasekar from "@/public/engineering/landing/judges/Sivakumar_Dhanasekar.jpeg";
+import SitaramSrivatsavai from "@/public/engineering/landing/judges/Sitaram_Srivatsavai.webp";
+import SravanKumarArava from "@/public/engineering/landing/judges/SravanKumar_Arava.webp";
+import SivakumarDhanasekar from "@/public/engineering/landing/judges/Sivakumar_Dhanasekar.webp";
 
 export interface Judge {
   name: string;
