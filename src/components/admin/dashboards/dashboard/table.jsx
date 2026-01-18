@@ -66,7 +66,7 @@ const Table = ({
   // clean up for deletion of rows
   useEffect(() => {
     rowVirtualizer.measure();
-  }, [rows.length]);
+  }, [rows.length, rowVirtualizer]);
 
   const virtualItems = rowVirtualizer.getVirtualItems();
 

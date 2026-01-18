@@ -21,8 +21,6 @@ import {
   Newspaper,
   Code,
   Globe,
-  FileSearch,
-  FolderSearch2,
   HandCoins,
   Cat,
   Notebook,
