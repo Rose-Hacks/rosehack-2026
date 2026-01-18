@@ -50,7 +50,7 @@ export const HACKPACKS = [
       "A full-stack starter using Firebase and Next.js. Ideal for apps with real-time database needs, featuring Tailwind CSS and GitHub Actions.",
   },
   {
-    link: "https://github.com/acm-ucr/firebase-nextjs-hackpack",
+    link: "https://github.com/acm-ucr/mongodb-nextjs-hackpack",
     title: "MongoDB Web App",
     languages: [
       "Javascript",
@@ -113,7 +113,7 @@ export const HACKPACKS = [
       "Python-based starter for Discord bots. Ideal for chat management and interactive bot functionalities.",
   },
   {
-    link: "https://github.com/acm-ucr/discord-python-hackpack",
+    link: "hhttps://github.com/acm-ucr/computer-vision-hackpack",
     title: "Computer Vision",
     languages: ["Python"],
     description:
@@ -127,7 +127,7 @@ export const HACKPACKS = [
       "A general-purpose Python starter, useful for scripting, automation, and data analysis projects.",
   },
   {
-    link: "https://github.com/acm-ucr/python-hackpack",
+    link: "https://github.com/acm-ucr/machine-learning-hackpack",
     title: "Machine Learning",
     languages: ["Python", "Jupyter", "Pandas"],
     description:

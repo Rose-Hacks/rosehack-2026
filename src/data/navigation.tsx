@@ -237,42 +237,14 @@ export const TABS: Tabs = {
           target: "_self",
         },
         {
-          name: "Team",
-          link: "/user/team",
-          icon: <Users className={iconStyle} />,
-          target: "_self",
-        },
-        {
           name: "Resources",
           link: "/resources",
           icon: <Newspaper className={iconStyle} />,
           target: "_blank",
         },
-        {
-          name: "Find a Team",
-          link: "/user/find",
-          icon: <Search className={iconStyle} />,
-          target: "_self",
-        },
       ],
     },
-    Forms: {
-      expand: true,
-      tabs: [
-        {
-          name: "Post Team Idea",
-          link: "/form/idea",
-          icon: <FolderSearch2 className={iconStyle} />,
-          target: "_self",
-        },
-        {
-          name: "Feedback",
-          link: "/form/feedback",
-          icon: <FileSearch className={iconStyle} />,
-          target: "_self",
-        },
-      ],
-    },
+
     Links: {
       expand: true,
       tabs: [
