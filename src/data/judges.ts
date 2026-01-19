@@ -22,6 +22,8 @@ import ZeynepYorulmaz from "@/public/engineering/landing/judges/Zeynep_Yorulmaz.
 import SitaramSrivatsavai from "@/public/engineering/landing/judges/Sitaram_Srivatsavai.webp";
 import SravanKumarArava from "@/public/engineering/landing/judges/SravanKumar_Arava.webp";
 import SivakumarDhanasekar from "@/public/engineering/landing/judges/Sivakumar_Dhanasekar.webp";
+import IoanaMunteanu from "@/public/engineering/landing/judges/Ioana_Munteanu.webp";
+import SanskritiShindadkar from "@/public/engineering/landing/judges/Sanskriti_Shindadkar.webp";
 
 export interface Judge {
   name: string;
@@ -141,6 +143,16 @@ const Judges: Judge[] = [
     name: "Sivakumar Dhanasekar",
     image: SivakumarDhanasekar,
     role: "Lead Software Engineer @ Equifax",
+  },
+  {
+    name: "Ioana Munteanu",
+    image: IoanaMunteanu,
+    role: "Product Software Engineer @ Sigma Computing",
+  },
+  {
+    name: "Sanskriti Shindadkar",
+    image: SanskritiShindadkar,
+    role: "Researcher @ UCLA & Independently",
   },
 ];
 
