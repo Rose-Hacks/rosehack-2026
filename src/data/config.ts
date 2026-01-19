@@ -25,11 +25,11 @@ const data: config = {
   date: new Date("2026-01-24T13:20:00"),
   end: new Date("2026-01-25T13:20:00"),
   packet: "",
-  devpost: "https://devpost.com/",
+  devpost: "https://rosehack.devpost.com/",
   domain: "https://www.rosehack.com",
   instagram: "https://www.instagram.com/rosehackucr/",
   linkedin: "https://www.linkedin.com/company/rosehack/",
-  discord: "https://www.discord.com",
+  discord: "https://discord.gg/Y3K23xgeQy",
   heart: "🤎",
 };
 
