@@ -12,5 +12,7 @@ export const api = async ({ url, method, body }: API) => {
 
   const data = await response.json();
 
+  console.log(data);
+
   return data;
 };
