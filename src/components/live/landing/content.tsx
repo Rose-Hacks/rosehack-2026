@@ -36,9 +36,9 @@ const Content = () => {
             </Link>
           </div> */}
           <div className="items-center justify-center gap-3 px-5 py-1 font-rosehack-alt duration-200 hover:scale-105">
-            <Link target="_blank" href="https://forms.gle/Mrq3hxSNA9pM4p4D6">
+            <Link target="_blank" href="/resources">
               <Button className="border-rosehack-white/30 hover:border-rosehack-white/40 flex w-full items-center justify-center rounded-xl border-4 bg-rosehack-yellow px-10 text-xl text-gray-800 duration-150 hover:cursor-pointer hover:bg-rosehack-yellow/80">
-                Judge Application
+                HackPacks
               </Button>
             </Link>
           </div>
