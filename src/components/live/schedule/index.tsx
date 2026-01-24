@@ -20,6 +20,7 @@ const Schedule = async () => {
     try {
       const res = await fetch(
         `https://www.googleapis.com/calendar/v3/calendars/${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&singleEvents=true&orderBy=startTime`,
+        { cache: "no-store" },
       );
 
       if (!res.ok) {
@@ -37,6 +38,8 @@ const Schedule = async () => {
       return [];
     }
   })();
+
+  console.log(results);
 
   const totalDays = [
     "Monday",
