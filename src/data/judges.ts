@@ -3,7 +3,6 @@ import { StaticImageData } from "next/image";
 import AmedeoAlberio from "@/public/engineering/landing/judges/Amedeo_Alberio.webp";
 import AribaHasan from "@/public/engineering/landing/judges/Ariba_Hasan.webp";
 import AshokKumar from "@/public/engineering/landing/judges/Ashok_Kumar.webp";
-import JoshuaCandelaria from "@/public/engineering/landing/judges/Joshua_Candelaria.webp";
 import RamakantSamal from "@/public/engineering/landing/judges/Ramakant_Samal.webp";
 import RobinWang from "@/public/engineering/landing/judges/Robin_Wang.webp";
 import AshishDibouliya from "@/public/engineering/landing/judges/Ashish_Dibouliya.webp";
@@ -61,11 +60,6 @@ const Judges: Judge[] = [
     name: "Sweta Mulji",
     image: SwetaMulji,
     role: "Co-founder and Chief Customer Officer @ SalesPlay X",
-  },
-  {
-    name: "Joshua Candelaria",
-    image: JoshuaCandelaria,
-    role: "SWE @ General Atomics",
   },
   {
     name: "Ramakant Samal",
