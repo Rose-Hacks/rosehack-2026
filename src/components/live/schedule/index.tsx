@@ -23,7 +23,7 @@ const Schedule = async () => {
       );
 
       if (!res.ok) {
-        console.warn(`Failed to fetch calendar`);
+        console.warn(`Failed to fetch calendar...`);
         return [];
       }
 
